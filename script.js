@@ -1,7 +1,3 @@
-/* =========================
-   TRANSLATIONS
-========================= */
-
 const translations = {
 
   tr: {
@@ -119,9 +115,6 @@ const translations = {
     projectsDescription:
       "Backend geliştirme ve bilgisayarlı görü alanlarında geliştirdiğim öne çıkan çalışmalar.",
 
-
-    /* INSIGHTFLOW */
-
     insightSubtitle:
       "Kurumsal Analitik Platform",
 
@@ -139,9 +132,6 @@ const translations = {
 
     coverageVisual:
       "Test Kapsamı",
-
-
-    /* AGROBYTE */
 
     teknofestBadge:
       "TEKNOFEST 2025 Finalisti",
@@ -176,9 +166,6 @@ const translations = {
     experienceDescription:
       "Enerji ve teknoloji sektörlerinde; veri analitiği, iş zekâsı ve bilgisayarlı görü alanlarında edindiğim staj deneyimleri.",
 
-
-    /* MEDAS */
-
     medasRole:
       "Business Intelligence & Data Analytics Stajyeri",
 
@@ -188,9 +175,6 @@ const translations = {
     medasDescription:
       "Enerji sektöründeki büyük ölçekli veriler üzerinde SQL ile analiz ve raporlama çalışmaları gerçekleştirdim. Sorgu performansının iyileştirilmesi üzerine çalışırken, Power BI ile karar destek süreçlerinde kullanılabilecek etkileşimli dashboard ve analizler geliştirdim.",
 
-
-    /* ARVIS */
-
     arvisRole:
       "AI R&D Stajyeri",
 
@@ -198,7 +182,46 @@ const translations = {
       "Temmuz 2024 — Eylül 2024",
 
     arvisDescription:
-      "Bilgisayarlı görü ve derin öğrenme tabanlı Ar-Ge çalışmalarında görev aldım. OpenCV ve YOLO ile nesne tespiti, çoklu nesne takibi ve insan davranışı analizi üzerine çalıştım; İş Sağlığı ve Güvenliği senaryolarına yönelik görüntü analizi çözümlerinin geliştirilmesine katkı sağladım."
+      "Bilgisayarlı görü ve derin öğrenme tabanlı Ar-Ge çalışmalarında görev aldım. OpenCV ve YOLO ile nesne tespiti, çoklu nesne takibi ve insan davranışı analizi üzerine çalıştım; İş Sağlığı ve Güvenliği senaryolarına yönelik görüntü analizi çözümlerinin geliştirilmesine katkı sağladım.",
+
+
+    /* CONTACT */
+
+    contactLabel:
+      "İletişim",
+
+    contactTitle:
+      "Birlikte çalışalım.",
+
+    contactDescription:
+      "Yeni mezun yazılım mühendisliği, Python backend ve yapay zekâ uygulamaları odaklı fırsatlara açığım. Benimle e-posta veya LinkedIn üzerinden iletişime geçebilirsiniz.",
+
+    contactAvailability:
+      "Türkiye genelindeki ve uzaktan çalışma fırsatlarına açığım.",
+
+    emailButton:
+      "E-posta Gönder",
+
+    cvButton:
+      "CV'yi İndir",
+
+    emailLabel:
+      "E-posta",
+
+    focusLabel:
+      "Odak Alanları",
+
+    availabilityLabel:
+      "Durum",
+
+    availableText:
+      "Yeni fırsatlara açık",
+
+    footerText:
+      "Yazılım, veri ve yapay zekâ.",
+
+    backToTop:
+      "Yukarı dön ↑"
 
   },
 
@@ -207,7 +230,6 @@ const translations = {
 
     pageTitle:
       "Emin Osman Atcı | Computer Engineer",
-
 
     /* NAV */
 
@@ -319,9 +341,6 @@ const translations = {
     projectsDescription:
       "Selected projects across backend engineering and computer vision.",
 
-
-    /* INSIGHTFLOW */
-
     insightSubtitle:
       "Enterprise Analytics Platform",
 
@@ -339,9 +358,6 @@ const translations = {
 
     coverageVisual:
       "Test Coverage",
-
-
-    /* AGROBYTE */
 
     teknofestBadge:
       "TEKNOFEST 2025 Finalist",
@@ -376,9 +392,6 @@ const translations = {
     experienceDescription:
       "Internship experience across the energy and technology industries, with a focus on data analytics, business intelligence and computer vision.",
 
-
-    /* MEDAS */
-
     medasRole:
       "Business Intelligence & Data Analytics Intern",
 
@@ -388,9 +401,6 @@ const translations = {
     medasDescription:
       "Worked with large-scale energy datasets using SQL for analysis and reporting. Contributed to query performance improvements and developed interactive Power BI dashboards to support data-driven decision-making.",
 
-
-    /* ARVIS */
-
     arvisRole:
       "AI R&D Intern",
 
@@ -398,7 +408,46 @@ const translations = {
       "July 2024 — September 2024",
 
     arvisDescription:
-      "Contributed to computer vision and deep learning R&D projects. Worked on object detection, multi-object tracking and human behavior analysis using OpenCV and YOLO, supporting the development of vision-based solutions for occupational health and safety scenarios."
+      "Contributed to computer vision and deep learning R&D projects. Worked on object detection, multi-object tracking and human behavior analysis using OpenCV and YOLO, supporting the development of vision-based solutions for occupational health and safety scenarios.",
+
+
+    /* CONTACT */
+
+    contactLabel:
+      "Contact",
+
+    contactTitle:
+      "Let's work together.",
+
+    contactDescription:
+      "I'm open to junior software engineering, Python backend and AI application opportunities. Feel free to reach out via email or LinkedIn.",
+
+    contactAvailability:
+      "Open to opportunities across Türkiye and remote roles.",
+
+    emailButton:
+      "Email Me",
+
+    cvButton:
+      "Download CV",
+
+    emailLabel:
+      "Email",
+
+    focusLabel:
+      "Focus Areas",
+
+    availabilityLabel:
+      "Availability",
+
+    availableText:
+      "Open to opportunities",
+
+    footerText:
+      "Software, data and artificial intelligence.",
+
+    backToTop:
+      "Back to top ↑"
 
   }
 
@@ -406,7 +455,7 @@ const translations = {
 
 
 /* =========================
-   DOM
+   LANGUAGE
 ========================= */
 
 const languageButtons =
@@ -419,10 +468,6 @@ const translatedElements =
     "[data-i18n]"
   );
 
-
-/* =========================
-   CHANGE LANGUAGE
-========================= */
 
 function changeLanguage(language) {
 
@@ -439,10 +484,8 @@ function changeLanguage(language) {
           "data-i18n"
         );
 
-
       const text =
         translations[language][key];
-
 
       if (text) {
         element.textContent =
@@ -459,7 +502,6 @@ function changeLanguage(language) {
       button.classList.remove(
         "active"
       );
-
 
       if (
         button.dataset.lang ===
@@ -479,11 +521,8 @@ function changeLanguage(language) {
   document.documentElement.lang =
     language;
 
-
   document.title =
-    translations[language]
-      .pageTitle;
-
+    translations[language].pageTitle;
 
   localStorage.setItem(
     "portfolio-language",
@@ -524,7 +563,23 @@ const savedLanguage =
     "portfolio-language"
   );
 
-
 changeLanguage(
   savedLanguage || "tr"
 );
+
+
+/* =========================
+   CURRENT YEAR
+========================= */
+
+const currentYear =
+  document.getElementById(
+    "currentYear"
+  );
+
+if (currentYear) {
+
+  currentYear.textContent =
+    new Date().getFullYear();
+
+}
