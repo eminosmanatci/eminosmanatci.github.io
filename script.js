@@ -5,7 +5,9 @@ const translations = {
     pageTitle:
       "Emin Osman Atcı | Python Backend • Data • Applied AI",
 
-    /* NAV */
+    /* =========================
+       NAV
+    ========================== */
 
     navAbout:
       "Hakkımda",
@@ -23,7 +25,9 @@ const translations = {
       "İletişim",
 
 
-    /* HERO */
+    /* =========================
+       HERO
+    ========================== */
 
     status:
       "Yeni fırsatlara açığım",
@@ -50,7 +54,9 @@ const translations = {
       "Applied AI",
 
 
-    /* ABOUT */
+    /* =========================
+       ABOUT
+    ========================== */
 
     aboutLabel:
       "Hakkımda",
@@ -80,7 +86,9 @@ const translations = {
       "TEKNOFEST Finalisti",
 
 
-    /* SKILLS */
+    /* =========================
+       SKILLS
+    ========================== */
 
     skillsLabel:
       "Teknik Yetkinlikler",
@@ -94,17 +102,19 @@ const translations = {
     backendDescription:
       "API geliştirme, veri erişimi, kimlik doğrulama ve asenkron işlemler.",
 
-    aiDescription:
-      "LLM entegrasyonları, RAG ve bilgisayarlı görü çözümlerini uygulama katmanına taşıma.",
-
     dataDescription:
       "Veri modelleme, ilişkisel veritabanları, analiz ve raporlama süreçleri.",
+
+    aiDescription:
+      "LLM entegrasyonları, RAG ve bilgisayarlı görü çözümlerini uygulama katmanına taşıma.",
 
     toolsDescription:
       "Test, otomasyon, versiyon kontrolü ve modern geliştirme araçları.",
 
 
-    /* PROJECTS */
+    /* =========================
+       PROJECTS
+    ========================== */
 
     projectsLabel:
       "Projeler",
@@ -155,7 +165,9 @@ const translations = {
       "Gerçek Zamanlı Analiz",
 
 
-    /* EXPERIENCE */
+    /* =========================
+       EXPERIENCE
+    ========================== */
 
     experienceLabel:
       "Deneyim",
@@ -185,7 +197,9 @@ const translations = {
       "Bilgisayarlı görü ve derin öğrenme tabanlı Ar-Ge çalışmalarında görev aldım. OpenCV ve YOLO ile nesne tespiti, çoklu nesne takibi ve insan davranışı analizi üzerine çalıştım; İş Sağlığı ve Güvenliği senaryolarına yönelik görüntü analizi çözümlerinin geliştirilmesine katkı sağladım.",
 
 
-    /* CONTACT */
+    /* =========================
+       CONTACT
+    ========================== */
 
     contactLabel:
       "İletişim",
@@ -226,12 +240,18 @@ const translations = {
   },
 
 
+  /* =========================================================
+     ENGLISH
+  ========================================================== */
+
   en: {
 
     pageTitle:
       "Emin Osman Atcı | Python Backend • Data • Applied AI",
 
-    /* NAV */
+    /* =========================
+       NAV
+    ========================== */
 
     navAbout:
       "About",
@@ -249,7 +269,9 @@ const translations = {
       "Contact",
 
 
-    /* HERO */
+    /* =========================
+       HERO
+    ========================== */
 
     status:
       "Open to opportunities",
@@ -276,7 +298,9 @@ const translations = {
       "Applied AI",
 
 
-    /* ABOUT */
+    /* =========================
+       ABOUT
+    ========================== */
 
     aboutLabel:
       "About Me",
@@ -306,7 +330,9 @@ const translations = {
       "TEKNOFEST Finalist",
 
 
-    /* SKILLS */
+    /* =========================
+       SKILLS
+    ========================== */
 
     skillsLabel:
       "Technical Skills",
@@ -320,17 +346,19 @@ const translations = {
     backendDescription:
       "API development, data access, authentication and asynchronous processing.",
 
-    aiDescription:
-      "LLM integrations, RAG and computer vision capabilities brought into application workflows.",
-
     dataDescription:
       "Data modeling, relational databases, analysis and reporting workflows.",
+
+    aiDescription:
+      "LLM integrations, RAG and computer vision capabilities brought into application workflows.",
 
     toolsDescription:
       "Testing, automation, version control and modern development tooling.",
 
 
-    /* PROJECTS */
+    /* =========================
+       PROJECTS
+    ========================== */
 
     projectsLabel:
       "Projects",
@@ -381,7 +409,9 @@ const translations = {
       "Real-Time Analysis",
 
 
-    /* EXPERIENCE */
+    /* =========================
+       EXPERIENCE
+    ========================== */
 
     experienceLabel:
       "Experience",
@@ -411,7 +441,9 @@ const translations = {
       "Contributed to computer vision and deep learning R&D projects. Worked on object detection, multi-object tracking and human behavior analysis using OpenCV and YOLO, supporting the development of vision-based solutions for occupational health and safety scenarios.",
 
 
-    /* CONTACT */
+    /* =========================
+       CONTACT
+    ========================== */
 
     contactLabel:
       "Contact",
@@ -454,20 +486,20 @@ const translations = {
 };
 
 
-/* =========================
-   LANGUAGE
-========================= */
+/* =========================================================
+   DOM ELEMENTS
+========================================================= */
 
 const languageButtons =
-  document.querySelectorAll(
-    ".lang-btn"
-  );
+  document.querySelectorAll(".lang-btn");
 
 const translatedElements =
-  document.querySelectorAll(
-    "[data-i18n]"
-  );
+  document.querySelectorAll("[data-i18n]");
 
+
+/* =========================================================
+   LANGUAGE CHANGE
+========================================================= */
 
 function changeLanguage(language) {
 
@@ -476,53 +508,56 @@ function changeLanguage(language) {
   }
 
 
-  translatedElements.forEach(
-    (element) => {
+  translatedElements.forEach((element) => {
 
-      const key =
-        element.getAttribute(
-          "data-i18n"
-        );
+    const key =
+      element.getAttribute("data-i18n");
 
-      const text =
-        translations[language][key];
+    const translatedText =
+      translations[language][key];
 
-      if (text) {
-        element.textContent =
-          text;
-      }
+
+    if (translatedText !== undefined) {
+
+      element.textContent =
+        translatedText;
 
     }
-  );
+
+  });
 
 
-  languageButtons.forEach(
-    (button) => {
+  /* ACTIVE LANGUAGE BUTTON */
 
-      button.classList.remove(
-        "active"
-      );
+  languageButtons.forEach((button) => {
 
-      if (
-        button.dataset.lang ===
-        language
-      ) {
+    button.classList.remove("active");
 
-        button.classList.add(
-          "active"
-        );
 
-      }
+    if (
+      button.dataset.lang === language
+    ) {
+
+      button.classList.add("active");
 
     }
-  );
 
+  });
+
+
+  /* HTML LANG ATTRIBUTE */
 
   document.documentElement.lang =
     language;
 
+
+  /* PAGE TITLE */
+
   document.title =
     translations[language].pageTitle;
+
+
+  /* SAVE LANGUAGE */
 
   localStorage.setItem(
     "portfolio-language",
@@ -532,50 +567,64 @@ function changeLanguage(language) {
 }
 
 
-/* =========================
-   EVENTS
-========================= */
+/* =========================================================
+   LANGUAGE BUTTON EVENTS
+========================================================= */
 
-languageButtons.forEach(
-  (button) => {
+languageButtons.forEach((button) => {
 
-    button.addEventListener(
-      "click",
-      () => {
+  button.addEventListener(
+    "click",
+    () => {
 
-        changeLanguage(
-          button.dataset.lang
-        );
+      const selectedLanguage =
+        button.dataset.lang;
 
-      }
-    );
+      changeLanguage(
+        selectedLanguage
+      );
 
-  }
-);
+    }
+  );
+
+});
 
 
-/* =========================
+/* =========================================================
    INITIAL LANGUAGE
-========================= */
+========================================================= */
 
 const savedLanguage =
   localStorage.getItem(
     "portfolio-language"
   );
 
-changeLanguage(
-  savedLanguage || "tr"
-);
+
+if (
+  savedLanguage &&
+  translations[savedLanguage]
+) {
+
+  changeLanguage(
+    savedLanguage
+  );
+
+} else {
+
+  changeLanguage("tr");
+
+}
 
 
-/* =========================
+/* =========================================================
    CURRENT YEAR
-========================= */
+========================================================= */
 
 const currentYear =
   document.getElementById(
     "currentYear"
   );
+
 
 if (currentYear) {
 
@@ -583,3 +632,58 @@ if (currentYear) {
     new Date().getFullYear();
 
 }
+
+
+/* =========================================================
+   SMOOTH SCROLL
+========================================================= */
+
+const internalLinks =
+  document.querySelectorAll(
+    'a[href^="#"]'
+  );
+
+
+internalLinks.forEach((link) => {
+
+  link.addEventListener(
+    "click",
+    (event) => {
+
+      const targetId =
+        link.getAttribute("href");
+
+
+      if (
+        !targetId ||
+        targetId === "#"
+      ) {
+
+        return;
+
+      }
+
+
+      const targetElement =
+        document.querySelector(
+          targetId
+        );
+
+
+      if (!targetElement) {
+        return;
+      }
+
+
+      event.preventDefault();
+
+
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
+    }
+  );
+
+});
