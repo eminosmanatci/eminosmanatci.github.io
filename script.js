@@ -48,6 +48,9 @@ const translations = {
     aiTag:
       "Yapay Zekâ",
 
+
+    /* ABOUT */
+
     aboutLabel:
       "Hakkımda",
 
@@ -75,6 +78,9 @@ const translations = {
     teknofestStat:
       "TEKNOFEST Finalisti",
 
+
+    /* SKILLS */
+
     skillsLabel:
       "Teknik Yetkinlikler",
 
@@ -84,29 +90,77 @@ const translations = {
     skillsDescription:
       "Backend geliştirmeden yapay zekâ uygulamalarına, veri katmanından geliştirme araçlarına kadar projelerimde aktif olarak kullandığım teknolojiler.",
 
-    backendTitle:
-      "Backend Development",
-
     backendDescription:
       "API geliştirme, veri erişimi, kimlik doğrulama ve asenkron işlemler.",
-
-    aiTitle:
-      "AI & Computer Vision",
 
     aiDescription:
       "Görüntü analizi, nesne tespiti, takip sistemleri ve AI entegrasyonları.",
 
-    dataTitle:
-      "Data & Database",
-
     dataDescription:
       "Veri analizi, ilişkisel veritabanları ve raporlama süreçleri.",
 
-    toolsTitle:
-      "Tools & Development",
-
     toolsDescription:
-      "Test, otomasyon, versiyon kontrolü ve modern geliştirme araçları."
+      "Test, otomasyon, versiyon kontrolü ve modern geliştirme araçları.",
+
+
+    /* PROJECTS */
+
+    projectsLabel:
+      "Projeler",
+
+    projectsTitle:
+      "Üzerinde çalıştığım projeler.",
+
+    projectsDescription:
+      "Backend geliştirme ve bilgisayarlı görü alanlarında geliştirdiğim öne çıkan çalışmalar.",
+
+
+    /* INSIGHTFLOW */
+
+    insightSubtitle:
+      "Kurumsal Analitik Platform",
+
+    insightDescription:
+      "Kurumsal verilerin işlenmesi, analiz edilmesi ve yönetici içgörülerine dönüştürülmesi için geliştirdiğim backend odaklı analitik platform.",
+
+    insightPoint1:
+      "FastAPI, PostgreSQL ve SQLAlchemy ile REST API ve veri odaklı backend mimarisi geliştirdim.",
+
+    insightPoint2:
+      "JWT tabanlı kimlik doğrulama, rol bazlı yetkilendirme ve Redis/Celery ile arka plan veri işleme süreçlerini oluşturdum.",
+
+    insightPoint3:
+      "62 backend testiyle yaklaşık %95 test kapsamına ulaştım ve GitHub Actions ile test süreçlerini otomatikleştirdim.",
+
+    coverageVisual:
+      "Test Kapsamı",
+
+    backendTests:
+      "Backend Testi",
+
+
+    /* AGROBYTE */
+
+    teknofestBadge:
+      "TEKNOFEST 2025 Finalisti",
+
+    agroSubtitle:
+      "Görüntü İşleme Tabanlı Hayvan Takip Sistemi",
+
+    agroDescription:
+      "Çiftlik ortamındaki inekleri kamera görüntülerinden tespit eden, kimlik bazlı takip eden ve davranışlarını analiz ederek olası anomalileri izleyen bilgisayarlı görü sistemi.",
+
+    agroPoint1:
+      "YOLO ve OpenCV tabanlı görüntü işleme ile gerçek zamanlı inek tespiti ve kimlik bazlı Multi-Object Tracking gerçekleştirdim.",
+
+    agroPoint2:
+      "Hayvanların ayakta durma, oturma ve yemleme gibi aktivitelerini görüntü üzerinden analiz eden bir yapı geliştirdim.",
+
+    agroPoint3:
+      "Davranışların zaman içerisindeki değişimini takip ederek olası anomalilerin belirlenmesine yönelik izleme altyapısı üzerinde çalıştım.",
+
+    realTimeAnalysis:
+      "Gerçek Zamanlı Analiz"
 
   },
 
@@ -155,6 +209,9 @@ const translations = {
     aiTag:
       "Artificial Intelligence",
 
+
+    /* ABOUT */
+
     aboutLabel:
       "About Me",
 
@@ -182,6 +239,9 @@ const translations = {
     teknofestStat:
       "TEKNOFEST Finalist",
 
+
+    /* SKILLS */
+
     skillsLabel:
       "Technical Skills",
 
@@ -191,29 +251,77 @@ const translations = {
     skillsDescription:
       "Technologies I actively use across backend development, AI applications, data systems and modern software development workflows.",
 
-    backendTitle:
-      "Backend Development",
-
     backendDescription:
       "API development, data access, authentication and asynchronous processing.",
-
-    aiTitle:
-      "AI & Computer Vision",
 
     aiDescription:
       "Image analysis, object detection, tracking systems and AI integrations.",
 
-    dataTitle:
-      "Data & Database",
-
     dataDescription:
       "Data analysis, relational databases and reporting workflows.",
 
-    toolsTitle:
-      "Tools & Development",
-
     toolsDescription:
-      "Testing, automation, version control and modern development tooling."
+      "Testing, automation, version control and modern development tooling.",
+
+
+    /* PROJECTS */
+
+    projectsLabel:
+      "Projects",
+
+    projectsTitle:
+      "Projects I've worked on.",
+
+    projectsDescription:
+      "Selected projects across backend engineering and computer vision.",
+
+
+    /* INSIGHTFLOW */
+
+    insightSubtitle:
+      "Enterprise Analytics Platform",
+
+    insightDescription:
+      "A backend-focused analytics platform designed to process enterprise data and transform it into actionable management insights.",
+
+    insightPoint1:
+      "Built REST APIs and a data-driven backend architecture using FastAPI, PostgreSQL and SQLAlchemy.",
+
+    insightPoint2:
+      "Implemented JWT authentication, role-based authorization and background data processing with Redis and Celery.",
+
+    insightPoint3:
+      "Reached approximately 95% test coverage with 62 backend tests and automated testing workflows with GitHub Actions.",
+
+    coverageVisual:
+      "Test Coverage",
+
+    backendTests:
+      "Backend Tests",
+
+
+    /* AGROBYTE */
+
+    teknofestBadge:
+      "TEKNOFEST 2025 Finalist",
+
+    agroSubtitle:
+      "Computer Vision-Based Animal Tracking System",
+
+    agroDescription:
+      "A computer vision system that detects cattle from camera footage, tracks each animal by identity and analyzes behavioral patterns to monitor potential anomalies.",
+
+    agroPoint1:
+      "Implemented real-time cattle detection and identity-based Multi-Object Tracking using YOLO and OpenCV.",
+
+    agroPoint2:
+      "Developed activity analysis for behaviors such as standing, sitting and feeding using camera footage.",
+
+    agroPoint3:
+      "Worked on a monitoring pipeline that tracks behavioral changes over time to identify potential anomalies.",
+
+    realTimeAnalysis:
+      "Real-Time Analysis"
 
   }
 
@@ -241,6 +349,7 @@ function changeLanguage(language) {
     return;
   }
 
+
   translatedElements.forEach((element) => {
 
     const key =
@@ -248,6 +357,7 @@ function changeLanguage(language) {
 
     const text =
       translations[language][key];
+
 
     if (text) {
       element.textContent = text;
@@ -260,6 +370,7 @@ function changeLanguage(language) {
 
     button.classList.remove("active");
 
+
     if (button.dataset.lang === language) {
       button.classList.add("active");
     }
@@ -270,8 +381,10 @@ function changeLanguage(language) {
   document.documentElement.lang =
     language;
 
+
   document.title =
     translations[language].pageTitle;
+
 
   localStorage.setItem(
     "portfolio-language",
@@ -282,7 +395,7 @@ function changeLanguage(language) {
 
 
 /* =========================
-   EVENTS
+   LANGUAGE EVENTS
 ========================= */
 
 languageButtons.forEach((button) => {
@@ -309,6 +422,7 @@ const savedLanguage =
   localStorage.getItem(
     "portfolio-language"
   );
+
 
 changeLanguage(
   savedLanguage || "tr"
