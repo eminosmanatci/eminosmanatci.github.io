@@ -823,133 +823,38 @@ img {
    INSIGHTFLOW VISUAL
 ========================= */
 
-.insight-visual {
-  display: grid;
-
-  place-items: center;
-
-  padding: 35px;
-
-  background:
-    radial-gradient(
-      circle at top right,
-      rgba(99, 102, 241, 0.18),
-      transparent 45%
-    ),
-    #111113;
+.insight-image-visual {
+  min-height: auto;
+  background: #000;
 }
 
-.insight-card {
+.insight-image-visual img {
   width: 100%;
-
-  max-width: 360px;
-
-  padding: 30px;
-
-  border:
-    1px solid #27272a;
-
-  border-radius: 16px;
-
-  background:
-    rgba(9, 9, 11, 0.82);
-
-  box-shadow:
-    0 24px 70px rgba(0, 0, 0, 0.35);
-}
-
-.visual-label {
-  color: #71717a;
-
-  font-size: 0.82rem;
-
-  letter-spacing: 0.08em;
-
-  text-transform: uppercase;
-}
-
-.coverage-number {
-  margin-top: 25px;
-
-  color: #818cf8;
-
-  font-size: 4.4rem;
-
-  line-height: 1;
-
-  font-weight: 800;
-
-  letter-spacing: -0.07em;
-}
-
-.coverage-label {
-  display: block;
-
-  margin-top: 8px;
-
-  color: #a1a1aa;
-
-  font-size: 0.9rem;
-}
-
-.coverage-bar {
-  height: 7px;
-
-  margin-top: 26px;
-
-  overflow: hidden;
-
-  border-radius: 999px;
-
-  background: #27272a;
-}
-
-.coverage-fill {
-  width: 95%;
   height: 100%;
 
-  border-radius: inherit;
+  min-height: 380px;
 
-  background:
-    linear-gradient(
-      90deg,
-      #6366f1,
-      #818cf8
-    );
+  object-fit: cover;
+  object-position: center;
+
+  transition:
+    transform 0.45s ease;
 }
 
-.mini-metrics {
-  display: grid;
-
-  grid-template-columns:
-    1fr 1fr;
-
-  gap: 16px;
-
-  margin-top: 28px;
+.insight-image-visual:hover img {
+  transform: scale(1.025);
 }
 
-.mini-metrics div {
-  padding-top: 16px;
+.insight-image-visual .image-badge {
+  display: flex;
 
-  border-top:
-    1px solid #27272a;
+  align-items: center;
+
+  gap: 6px;
 }
 
-.mini-metrics strong {
-  display: block;
-
-  font-size: 1.25rem;
-}
-
-.mini-metrics span {
-  display: block;
-
-  margin-top: 4px;
-
-  color: #71717a;
-
-  font-size: 0.72rem;
+.insight-image-visual .image-badge strong {
+  color: #a5b4fc;
 }
 
 
@@ -1188,16 +1093,8 @@ img {
     min-height: 280px;
   }
 
-  .insight-visual {
-    padding: 20px;
-  }
-
-  .insight-card {
-    padding: 24px;
-  }
-
-  .coverage-number {
-    font-size: 3.6rem;
+  .insight-image-visual img {
+    min-height: 280px;
   }
 
 }
