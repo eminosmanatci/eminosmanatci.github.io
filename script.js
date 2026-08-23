@@ -9,6 +9,8 @@ const translations = {
     pageTitle:
       "Emin Osman Atcı | Bilgisayar Mühendisi",
 
+    /* NAV */
+
     navAbout:
       "Hakkımda",
 
@@ -23,6 +25,9 @@ const translations = {
 
     navContact:
       "İletişim",
+
+
+    /* HERO */
 
     status:
       "Yeni fırsatlara açığım",
@@ -135,9 +140,6 @@ const translations = {
     coverageVisual:
       "Test Kapsamı",
 
-    backendTests:
-      "Backend Testi",
-
 
     /* AGROBYTE */
 
@@ -160,7 +162,43 @@ const translations = {
       "Davranışların zaman içerisindeki değişimini takip ederek olası anomalilerin belirlenmesine yönelik izleme altyapısı üzerinde çalıştım.",
 
     realTimeAnalysis:
-      "Gerçek Zamanlı Analiz"
+      "Gerçek Zamanlı Analiz",
+
+
+    /* EXPERIENCE */
+
+    experienceLabel:
+      "Deneyim",
+
+    experienceTitle:
+      "Gerçek projeler üzerinde edindiğim deneyimler.",
+
+    experienceDescription:
+      "Veri analitiği ve bilgisayarlı görü alanlarında farklı sektörlerde edindiğim teknik staj deneyimleri.",
+
+
+    /* MEDAS */
+
+    medasRole:
+      "Business Intelligence & Data Analytics Stajyeri",
+
+    medasDate:
+      "Temmuz 2025 — Ağustos 2025",
+
+    medasDescription:
+      "Enerji sektöründeki büyük ölçekli veriler üzerinde SQL ile analiz ve raporlama çalışmaları gerçekleştirdim. Sorgu performansının iyileştirilmesi üzerine çalışırken, Power BI ile karar destek süreçlerinde kullanılabilecek etkileşimli dashboard ve analizler geliştirdim.",
+
+
+    /* ARVIS */
+
+    arvisRole:
+      "AI R&D Stajyeri",
+
+    arvisDate:
+      "Temmuz 2024 — Eylül 2024",
+
+    arvisDescription:
+      "Bilgisayarlı görü ve derin öğrenme tabanlı Ar-Ge çalışmalarında görev aldım. OpenCV ve YOLO ile nesne tespiti, çoklu nesne takibi ve insan davranışı analizi üzerine çalıştım; İş Sağlığı ve Güvenliği senaryolarına yönelik görüntü analizi çözümlerinin geliştirilmesine katkı sağladım."
 
   },
 
@@ -169,6 +207,9 @@ const translations = {
 
     pageTitle:
       "Emin Osman Atcı | Computer Engineer",
+
+
+    /* NAV */
 
     navAbout:
       "About",
@@ -184,6 +225,9 @@ const translations = {
 
     navContact:
       "Contact",
+
+
+    /* HERO */
 
     status:
       "Open to opportunities",
@@ -296,9 +340,6 @@ const translations = {
     coverageVisual:
       "Test Coverage",
 
-    backendTests:
-      "Backend Tests",
-
 
     /* AGROBYTE */
 
@@ -321,7 +362,43 @@ const translations = {
       "Worked on a monitoring pipeline that tracks behavioral changes over time to identify potential anomalies.",
 
     realTimeAnalysis:
-      "Real-Time Analysis"
+      "Real-Time Analysis",
+
+
+    /* EXPERIENCE */
+
+    experienceLabel:
+      "Experience",
+
+    experienceTitle:
+      "Hands-on experience with real-world projects.",
+
+    experienceDescription:
+      "Technical internship experience across data analytics and computer vision in different industries.",
+
+
+    /* MEDAS */
+
+    medasRole:
+      "Business Intelligence & Data Analytics Intern",
+
+    medasDate:
+      "July 2025 — August 2025",
+
+    medasDescription:
+      "Worked with large-scale energy datasets using SQL for analysis and reporting. Contributed to query performance improvements and developed interactive Power BI dashboards to support data-driven decision-making.",
+
+
+    /* ARVIS */
+
+    arvisRole:
+      "AI R&D Intern",
+
+    arvisDate:
+      "July 2024 — September 2024",
+
+    arvisDescription:
+      "Contributed to computer vision and deep learning R&D projects. Worked on object detection, multi-object tracking and human behavior analysis using OpenCV and YOLO, supporting the development of vision-based solutions for occupational health and safety scenarios."
 
   }
 
@@ -333,10 +410,14 @@ const translations = {
 ========================= */
 
 const languageButtons =
-  document.querySelectorAll(".lang-btn");
+  document.querySelectorAll(
+    ".lang-btn"
+  );
 
 const translatedElements =
-  document.querySelectorAll("[data-i18n]");
+  document.querySelectorAll(
+    "[data-i18n]"
+  );
 
 
 /* =========================
@@ -350,32 +431,49 @@ function changeLanguage(language) {
   }
 
 
-  translatedElements.forEach((element) => {
+  translatedElements.forEach(
+    (element) => {
 
-    const key =
-      element.getAttribute("data-i18n");
+      const key =
+        element.getAttribute(
+          "data-i18n"
+        );
 
-    const text =
-      translations[language][key];
+
+      const text =
+        translations[language][key];
 
 
-    if (text) {
-      element.textContent = text;
+      if (text) {
+        element.textContent =
+          text;
+      }
+
     }
-
-  });
-
-
-  languageButtons.forEach((button) => {
-
-    button.classList.remove("active");
+  );
 
 
-    if (button.dataset.lang === language) {
-      button.classList.add("active");
+  languageButtons.forEach(
+    (button) => {
+
+      button.classList.remove(
+        "active"
+      );
+
+
+      if (
+        button.dataset.lang ===
+        language
+      ) {
+
+        button.classList.add(
+          "active"
+        );
+
+      }
+
     }
-
-  });
+  );
 
 
   document.documentElement.lang =
@@ -383,7 +481,8 @@ function changeLanguage(language) {
 
 
   document.title =
-    translations[language].pageTitle;
+    translations[language]
+      .pageTitle;
 
 
   localStorage.setItem(
@@ -395,23 +494,25 @@ function changeLanguage(language) {
 
 
 /* =========================
-   LANGUAGE EVENTS
+   EVENTS
 ========================= */
 
-languageButtons.forEach((button) => {
+languageButtons.forEach(
+  (button) => {
 
-  button.addEventListener(
-    "click",
-    () => {
+    button.addEventListener(
+      "click",
+      () => {
 
-      changeLanguage(
-        button.dataset.lang
-      );
+        changeLanguage(
+          button.dataset.lang
+        );
 
-    }
-  );
+      }
+    );
 
-});
+  }
+);
 
 
 /* =========================
