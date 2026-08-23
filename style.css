@@ -45,6 +45,49 @@ button {
   margin: 0 auto;
 }
 
+.section {
+  padding: 110px 0;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 55px;
+}
+
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: #818cf8;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  font-size: clamp(2.3rem, 4vw, 4rem);
+
+  line-height: 1.08;
+
+  letter-spacing: -0.05em;
+}
+
+.section-description {
+  margin-top: 20px;
+
+  max-width: 650px;
+
+  color: #a1a1aa;
+
+  font-size: 1rem;
+
+  line-height: 1.8;
+}
+
 
 /* =========================
    NAVBAR
@@ -68,7 +111,6 @@ button {
   border-bottom:
     1px solid rgba(255, 255, 255, 0.06);
 }
-
 
 .nav-container {
   height: 72px;
@@ -107,15 +149,13 @@ button {
 
   align-items: center;
 
-  gap: 32px;
+  gap: 28px;
 }
 
 .nav-links a {
-  position: relative;
-
   color: #a1a1aa;
 
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 
   transition: 0.2s ease;
 }
@@ -139,7 +179,7 @@ button {
 
 
 /* =========================
-   LANGUAGE SWITCHER
+   LANGUAGE
 ========================= */
 
 .language-switcher {
@@ -154,10 +194,8 @@ button {
   font-size: 0.85rem;
 }
 
-
 .lang-btn {
   border: none;
-
   outline: none;
 
   background: transparent;
@@ -167,7 +205,6 @@ button {
   cursor: pointer;
 
   font-size: 0.85rem;
-
   font-weight: 700;
 
   padding: 5px;
@@ -175,11 +212,9 @@ button {
   transition: 0.2s ease;
 }
 
-
 .lang-btn:hover {
   color: #f4f4f5;
 }
-
 
 .lang-btn.active {
   color: #818cf8;
@@ -187,26 +222,23 @@ button {
 
 
 /* =========================
-   GITHUB BUTTON
+   GITHUB
 ========================= */
 
 .github-btn {
   padding: 9px 18px;
 
-  border:
-    1px solid #27272a;
+  border: 1px solid #27272a;
 
   border-radius: 10px;
 
   background: #18181b;
 
   font-size: 0.9rem;
-
   font-weight: 600;
 
   transition: 0.2s ease;
 }
-
 
 .github-btn:hover {
   background: #27272a;
@@ -235,9 +267,6 @@ button {
   padding-top: 72px;
 }
 
-
-/* BACKGROUND GLOW */
-
 .hero::before {
   content: "";
 
@@ -261,7 +290,6 @@ button {
   pointer-events: none;
 }
 
-
 .hero::after {
   content: "";
 
@@ -282,11 +310,6 @@ button {
 
   pointer-events: none;
 }
-
-
-/* =========================
-   HERO CONTENT
-========================= */
 
 .hero-content {
   position: relative;
@@ -328,7 +351,6 @@ button {
   font-size: 0.85rem;
 }
 
-
 .status-dot {
   width: 8px;
   height: 8px;
@@ -343,7 +365,7 @@ button {
 
 
 /* =========================
-   INTRO
+   HERO TEXT
 ========================= */
 
 .intro {
@@ -356,41 +378,25 @@ button {
   font-weight: 500;
 }
 
-
-/* =========================
-   HERO TITLE
-========================= */
-
 .hero h1 {
-  max-width: 950px;
+  max-width: 900px;
 
   font-size:
-    clamp(3.3rem, 7vw, 6.4rem);
+    clamp(3rem, 6vw, 5.7rem);
 
-  line-height: 0.98;
+  line-height: 1;
 
-  letter-spacing: -0.065em;
+  letter-spacing: -0.06em;
 
   font-weight: 800;
 }
-
-
-.hero h1 span {
-  display: inline;
-}
-
 
 .hero h1 .highlight {
   color: #818cf8;
 }
 
-
-/* =========================
-   DESCRIPTION
-========================= */
-
 .hero-description {
-  max-width: 720px;
+  max-width: 680px;
 
   margin-top: 30px;
 
@@ -414,7 +420,6 @@ button {
   margin-top: 34px;
 }
 
-
 .btn {
   min-height: 48px;
 
@@ -428,17 +433,14 @@ button {
   border-radius: 10px;
 
   font-size: 0.95rem;
-
   font-weight: 600;
 
   transition: 0.2s ease;
 }
 
-
 .btn:hover {
   transform: translateY(-2px);
 }
-
 
 .btn-primary {
   background: #6366f1;
@@ -446,21 +448,17 @@ button {
   color: white;
 }
 
-
 .btn-primary:hover {
   background: #4f46e5;
 }
 
-
 .btn-secondary {
   background: #18181b;
 
-  border:
-    1px solid #27272a;
+  border: 1px solid #27272a;
 
   color: #f4f4f5;
 }
-
 
 .btn-secondary:hover {
   background: #27272a;
@@ -483,7 +481,6 @@ button {
   margin-top: 45px;
 }
 
-
 .tech-preview span {
   padding: 7px 12px;
 
@@ -502,7 +499,6 @@ button {
   transition: 0.2s ease;
 }
 
-
 .tech-preview span:hover {
   color: #a1a1aa;
 
@@ -511,21 +507,232 @@ button {
 
 
 /* =========================
-   RESPONSIVE - TABLET
+   ABOUT
 ========================= */
 
-@media (max-width: 850px) {
+#about {
+  border-top:
+    1px solid rgba(255, 255, 255, 0.05);
+}
+
+.about-grid {
+  display: grid;
+
+  grid-template-columns: 1.4fr 0.8fr;
+
+  gap: 80px;
+
+  align-items: start;
+}
+
+.about-main {
+  max-width: 700px;
+}
+
+.about-main p {
+  color: #a1a1aa;
+
+  font-size: 1.05rem;
+
+  line-height: 1.9;
+
+  margin-bottom: 24px;
+}
+
+.about-main p:first-child {
+  color: #d4d4d8;
+}
+
+.about-side {
+  border-left:
+    1px solid #27272a;
+
+  padding-left: 36px;
+}
+
+.about-stat {
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 22px 0;
+
+  border-bottom:
+    1px solid #27272a;
+}
+
+.about-stat:first-child {
+  padding-top: 0;
+}
+
+.stat-number {
+  color: #f4f4f5;
+
+  font-size: 2rem;
+
+  font-weight: 750;
+
+  letter-spacing: -0.04em;
+}
+
+.stat-label {
+  margin-top: 4px;
+
+  color: #71717a;
+
+  font-size: 0.88rem;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-section {
+  background: #0c0c0f;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.05);
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skills-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+}
+
+.skill-card {
+  position: relative;
+
+  padding: 30px;
+
+  border:
+    1px solid #27272a;
+
+  border-radius: 16px;
+
+  background:
+    rgba(24, 24, 27, 0.5);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+
+  border-color: #3f3f46;
+
+  background:
+    rgba(24, 24, 27, 0.8);
+}
+
+.skill-icon {
+  margin-bottom: 35px;
+
+  color: #6366f1;
+
+  font-size: 0.75rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.1em;
+}
+
+.skill-card h3 {
+  margin-bottom: 10px;
+
+  font-size: 1.3rem;
+
+  letter-spacing: -0.025em;
+}
+
+.skill-card p {
+  max-width: 440px;
+
+  color: #71717a;
+
+  font-size: 0.92rem;
+
+  line-height: 1.7;
+}
+
+.skill-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 24px;
+}
+
+.skill-tags span {
+  padding: 6px 10px;
+
+  border:
+    1px solid #27272a;
+
+  border-radius: 7px;
+
+  background: #111113;
+
+  color: #a1a1aa;
+
+  font-size: 0.78rem;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
 
   .nav-links {
     display: none;
   }
 
+  .about-grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .about-side {
+    border-left: none;
+
+    border-top:
+      1px solid #27272a;
+
+    padding-left: 0;
+
+    padding-top: 28px;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 0 30px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
 
-
-/* =========================
-   RESPONSIVE - MOBILE
-========================= */
 
 @media (max-width: 600px) {
 
@@ -533,32 +740,21 @@ button {
     width: 90%;
   }
 
+  .section {
+    padding: 80px 0;
+  }
 
   .nav-container {
     height: 64px;
   }
 
-
-  .navbar {
-    background:
-      rgba(9, 9, 11, 0.92);
-  }
-
-
-  .logo {
-    font-size: 1.3rem;
-  }
-
-
   .github-btn {
     display: none;
   }
 
-
   .nav-actions {
     gap: 0;
   }
-
 
   .hero {
     padding-top: 64px;
@@ -566,40 +762,25 @@ button {
     min-height: 100svh;
   }
 
-
   .hero-content {
     padding-top: 45px;
-
     padding-bottom: 45px;
   }
-
-
-  .status {
-    margin-bottom: 24px;
-  }
-
 
   .intro {
     font-size: 0.95rem;
   }
 
-
   .hero h1 {
     font-size:
-      clamp(3rem, 13vw, 4.8rem);
-
-    letter-spacing: -0.055em;
+      clamp(2.8rem, 13vw, 4.4rem);
   }
-
 
   .hero-description {
     margin-top: 24px;
 
     font-size: 1rem;
-
-    line-height: 1.7;
   }
-
 
   .hero-buttons {
     flex-direction: column;
@@ -607,14 +788,24 @@ button {
     margin-top: 28px;
   }
 
-
   .btn {
     width: 100%;
   }
 
+  .section-heading {
+    margin-bottom: 40px;
+  }
 
-  .tech-preview {
-    margin-top: 34px;
+  .about-main p {
+    font-size: 1rem;
+  }
+
+  .about-side {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skill-card {
+    padding: 24px;
   }
 
 }
