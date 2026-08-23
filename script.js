@@ -171,10 +171,10 @@ const translations = {
       "Deneyim",
 
     experienceTitle:
-      "Gerçek projeler üzerinde edindiğim deneyimler.",
+      "Farklı sektörlerde edindiğim teknik deneyimler.",
 
     experienceDescription:
-      "Veri analitiği ve bilgisayarlı görü alanlarında farklı sektörlerde edindiğim teknik staj deneyimleri.",
+      "Enerji ve teknoloji sektörlerinde; veri analitiği, iş zekâsı ve bilgisayarlı görü alanlarında edindiğim staj deneyimleri.",
 
 
     /* MEDAS */
@@ -371,10 +371,10 @@ const translations = {
       "Experience",
 
     experienceTitle:
-      "Hands-on experience with real-world projects.",
+      "Technical experience across different industries.",
 
     experienceDescription:
-      "Technical internship experience across data analytics and computer vision in different industries.",
+      "Internship experience across the energy and technology industries, with a focus on data analytics, business intelligence and computer vision.",
 
 
     /* MEDAS */
