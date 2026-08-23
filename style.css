@@ -31,6 +31,10 @@ a {
   color: inherit;
 }
 
+button {
+  font-family: inherit;
+}
+
 
 /* =========================
    GENERAL
@@ -48,17 +52,23 @@ a {
 
 .navbar {
   position: fixed;
+
   top: 0;
   left: 0;
 
   width: 100%;
+
   z-index: 1000;
 
   background: rgba(9, 9, 11, 0.8);
-  backdrop-filter: blur(14px);
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.06);
 }
+
 
 .nav-container {
   height: 72px;
@@ -68,10 +78,19 @@ a {
   justify-content: space-between;
 }
 
+
+/* =========================
+   LOGO
+========================= */
+
 .logo {
   font-size: 1.45rem;
+
   font-weight: 800;
+
   letter-spacing: -0.04em;
+
+  color: #f4f4f5;
 }
 
 .logo span {
@@ -79,15 +98,23 @@ a {
 }
 
 
-/* NAV LINKS */
+/* =========================
+   NAV LINKS
+========================= */
 
 .nav-links {
   display: flex;
+
+  align-items: center;
+
   gap: 32px;
 }
 
 .nav-links a {
+  position: relative;
+
   color: #a1a1aa;
+
   font-size: 0.95rem;
 
   transition: 0.2s ease;
@@ -98,24 +125,94 @@ a {
 }
 
 
-/* GITHUB BUTTON */
+/* =========================
+   NAV ACTIONS
+========================= */
 
-.github-btn {
-  padding: 9px 18px;
+.nav-actions {
+  display: flex;
 
-  border: 1px solid #27272a;
-  border-radius: 10px;
+  align-items: center;
 
-  font-size: 0.9rem;
-  font-weight: 600;
+  gap: 18px;
+}
 
-  background: #18181b;
+
+/* =========================
+   LANGUAGE SWITCHER
+========================= */
+
+.language-switcher {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #52525b;
+
+  font-size: 0.85rem;
+}
+
+
+.lang-btn {
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #71717a;
+
+  cursor: pointer;
+
+  font-size: 0.85rem;
+
+  font-weight: 700;
+
+  padding: 5px;
 
   transition: 0.2s ease;
 }
 
+
+.lang-btn:hover {
+  color: #f4f4f5;
+}
+
+
+.lang-btn.active {
+  color: #818cf8;
+}
+
+
+/* =========================
+   GITHUB BUTTON
+========================= */
+
+.github-btn {
+  padding: 9px 18px;
+
+  border:
+    1px solid #27272a;
+
+  border-radius: 10px;
+
+  background: #18181b;
+
+  font-size: 0.9rem;
+
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+
 .github-btn:hover {
   background: #27272a;
+
+  border-color: #3f3f46;
+
   transform: translateY(-1px);
 }
 
@@ -125,15 +222,17 @@ a {
 ========================= */
 
 .hero {
+  position: relative;
+
   min-height: 100vh;
 
   display: flex;
+
   align-items: center;
 
-  padding-top: 72px;
-
-  position: relative;
   overflow: hidden;
+
+  padding-top: 72px;
 }
 
 
@@ -144,54 +243,91 @@ a {
 
   position: absolute;
 
-  width: 600px;
-  height: 600px;
+  width: 650px;
+  height: 650px;
 
-  border-radius: 50%;
-
-  background: rgba(99, 102, 241, 0.12);
-
-  filter: blur(120px);
-
-  top: -200px;
+  top: -230px;
   left: 50%;
 
   transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background:
+    rgba(99, 102, 241, 0.13);
+
+  filter: blur(120px);
 
   pointer-events: none;
 }
 
 
-/* HERO CONTENT */
+.hero::after {
+  content: "";
 
-.hero-content {
-  position: relative;
-  z-index: 1;
+  position: absolute;
 
-  max-width: 900px;
+  width: 400px;
+  height: 400px;
+
+  bottom: -250px;
+  right: -100px;
+
+  border-radius: 50%;
+
+  background:
+    rgba(79, 70, 229, 0.08);
+
+  filter: blur(100px);
+
+  pointer-events: none;
 }
 
 
-/* STATUS */
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+  position: relative;
+
+  z-index: 1;
+
+  max-width: 950px;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+/* =========================
+   STATUS
+========================= */
 
 .status {
   display: inline-flex;
+
   align-items: center;
+
   gap: 9px;
 
   padding: 7px 12px;
 
   margin-bottom: 28px;
 
-  border: 1px solid #27272a;
+  border:
+    1px solid #27272a;
+
   border-radius: 999px;
+
+  background:
+    rgba(24, 24, 27, 0.6);
 
   color: #a1a1aa;
 
   font-size: 0.85rem;
-
-  background: rgba(24, 24, 27, 0.6);
 }
+
 
 .status-dot {
   width: 8px;
@@ -201,28 +337,35 @@ a {
 
   background: #22c55e;
 
-  box-shadow: 0 0 12px rgba(34, 197, 94, 0.7);
+  box-shadow:
+    0 0 12px rgba(34, 197, 94, 0.7);
 }
 
 
-/* INTRO */
+/* =========================
+   INTRO
+========================= */
 
 .intro {
+  margin-bottom: 15px;
+
   color: #a1a1aa;
 
   font-size: 1.05rem;
-  font-weight: 500;
 
-  margin-bottom: 15px;
+  font-weight: 500;
 }
 
 
-/* MAIN TITLE */
+/* =========================
+   HERO TITLE
+========================= */
 
 .hero h1 {
-  max-width: 900px;
+  max-width: 950px;
 
-  font-size: clamp(3.3rem, 7vw, 6.4rem);
+  font-size:
+    clamp(3.3rem, 7vw, 6.4rem);
 
   line-height: 0.98;
 
@@ -231,15 +374,23 @@ a {
   font-weight: 800;
 }
 
+
 .hero h1 span {
+  display: inline;
+}
+
+
+.hero h1 .highlight {
   color: #818cf8;
 }
 
 
-/* DESCRIPTION */
+/* =========================
+   DESCRIPTION
+========================= */
 
 .hero-description {
-  max-width: 680px;
+  max-width: 720px;
 
   margin-top: 30px;
 
@@ -251,36 +402,43 @@ a {
 }
 
 
-/* BUTTONS */
+/* =========================
+   BUTTONS
+========================= */
 
 .hero-buttons {
   display: flex;
+
   gap: 12px;
 
   margin-top: 34px;
 }
 
+
 .btn {
+  min-height: 48px;
+
   display: inline-flex;
 
   align-items: center;
   justify-content: center;
-
-  min-height: 48px;
 
   padding: 0 22px;
 
   border-radius: 10px;
 
   font-size: 0.95rem;
+
   font-weight: 600;
 
   transition: 0.2s ease;
 }
 
+
 .btn:hover {
   transform: translateY(-2px);
 }
+
 
 .btn-primary {
   background: #6366f1;
@@ -288,20 +446,26 @@ a {
   color: white;
 }
 
+
 .btn-primary:hover {
   background: #4f46e5;
 }
 
+
 .btn-secondary {
   background: #18181b;
 
-  border: 1px solid #27272a;
+  border:
+    1px solid #27272a;
 
   color: #f4f4f5;
 }
 
+
 .btn-secondary:hover {
   background: #27272a;
+
+  border-color: #3f3f46;
 }
 
 
@@ -311,6 +475,7 @@ a {
 
 .tech-preview {
   display: flex;
+
   flex-wrap: wrap;
 
   gap: 10px;
@@ -318,46 +483,138 @@ a {
   margin-top: 45px;
 }
 
+
 .tech-preview span {
   padding: 7px 12px;
 
+  border:
+    1px solid #27272a;
+
   border-radius: 8px;
 
-  border: 1px solid #27272a;
-
-  background: rgba(24, 24, 27, 0.5);
+  background:
+    rgba(24, 24, 27, 0.5);
 
   color: #71717a;
 
   font-size: 0.82rem;
+
+  transition: 0.2s ease;
+}
+
+
+.tech-preview span:hover {
+  color: #a1a1aa;
+
+  border-color: #3f3f46;
 }
 
 
 /* =========================
-   RESPONSIVE
+   RESPONSIVE - TABLET
 ========================= */
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
 
   .nav-links {
     display: none;
   }
 
-  .hero h1 {
-    font-size: clamp(3rem, 13vw, 5rem);
+}
+
+
+/* =========================
+   RESPONSIVE - MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .container {
+    width: 90%;
   }
 
-  .hero-description {
-    font-size: 1rem;
+
+  .nav-container {
+    height: 64px;
   }
+
+
+  .navbar {
+    background:
+      rgba(9, 9, 11, 0.92);
+  }
+
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+
+  .github-btn {
+    display: none;
+  }
+
+
+  .nav-actions {
+    gap: 0;
+  }
+
+
+  .hero {
+    padding-top: 64px;
+
+    min-height: 100svh;
+  }
+
+
+  .hero-content {
+    padding-top: 45px;
+
+    padding-bottom: 45px;
+  }
+
+
+  .status {
+    margin-bottom: 24px;
+  }
+
+
+  .intro {
+    font-size: 0.95rem;
+  }
+
+
+  .hero h1 {
+    font-size:
+      clamp(3rem, 13vw, 4.8rem);
+
+    letter-spacing: -0.055em;
+  }
+
+
+  .hero-description {
+    margin-top: 24px;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+  }
+
 
   .hero-buttons {
     flex-direction: column;
-    align-items: flex-start;
+
+    margin-top: 28px;
   }
+
 
   .btn {
     width: 100%;
+  }
+
+
+  .tech-preview {
+    margin-top: 34px;
   }
 
 }

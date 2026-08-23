@@ -1,84 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <meta
     name="description"
-    content="Emin Osman Atcı - Computer Engineer focused on backend development, AI applications and data-driven systems."
+    content="Emin Osman Atcı - Backend geliştirme, yapay zekâ uygulamaları, bilgisayarlı görü ve veri odaklı sistemler üzerine çalışan Bilgisayar Mühendisi."
   >
 
-  <title>Emin Osman Atcı | Software Engineer</title>
+  <title>Emin Osman Atcı | Bilgisayar Mühendisi</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+
   <header class="navbar">
+
     <div class="container nav-container">
 
       <a href="#" class="logo">
         Emin<span>.</span>
       </a>
 
+
       <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+
+        <a href="#about" data-i18n="navAbout">
+          Hakkımda
+        </a>
+
+        <a href="#projects" data-i18n="navProjects">
+          Projeler
+        </a>
+
+        <a href="#experience" data-i18n="navExperience">
+          Deneyim
+        </a>
+
+        <a href="#contact" data-i18n="navContact">
+          İletişim
+        </a>
+
       </nav>
 
-      <a
-        href="https://github.com/eminosmanatci"
-        target="_blank"
-        class="github-btn"
-      >
-        GitHub
-      </a>
+
+      <div class="nav-actions">
+
+        <!-- LANGUAGE SWITCHER -->
+
+        <div class="language-switcher">
+
+          <button
+            class="lang-btn active"
+            data-lang="tr"
+          >
+            TR
+          </button>
+
+          <span>/</span>
+
+          <button
+            class="lang-btn"
+            data-lang="en"
+          >
+            EN
+          </button>
+
+        </div>
+
+
+        <!-- GITHUB -->
+
+        <a
+          href="https://github.com/eminosmanatci"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="github-btn"
+        >
+          GitHub
+        </a>
+
+      </div>
 
     </div>
+
   </header>
 
 
-  <!-- HERO -->
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
   <main>
+
     <section class="hero">
 
       <div class="container hero-content">
 
+
+        <!-- STATUS -->
+
         <div class="status">
+
           <span class="status-dot"></span>
-          Open to opportunities
+
+          <span data-i18n="status">
+            Yeni fırsatlara açığım
+          </span>
+
         </div>
 
-        <p class="intro">
-          Hi, I'm Emin Osman Atcı 👋
+
+        <!-- INTRO -->
+
+        <p
+          class="intro"
+          data-i18n="intro"
+        >
+          Merhaba, ben Emin Osman Atcı 👋
         </p>
+
+
+        <!-- TITLE -->
 
         <h1>
-          I build
-          <span>backend systems</span>
-          & AI applications.
+
+          <span data-i18n="heroFirst">
+            Backend sistemleri ve
+          </span>
+
+          <span
+            class="highlight"
+            data-i18n="heroHighlight"
+          >
+            yapay zekâ uygulamaları
+          </span>
+
+          <span data-i18n="heroLast">
+            geliştiriyorum.
+          </span>
+
         </h1>
 
-        <p class="hero-description">
-          Computer Engineer focused on Python backend development,
-          artificial intelligence, computer vision and data-driven systems.
-          I enjoy turning ideas and AI models into reliable software products.
+
+        <!-- DESCRIPTION -->
+
+        <p
+          class="hero-description"
+          data-i18n="heroDescription"
+        >
+          Python backend geliştirme, yapay zekâ, bilgisayarlı görü ve
+          veri odaklı sistemler üzerine çalışan yeni mezun bir
+          Bilgisayar Mühendisiyim. Teknik fikirleri gerçek uygulamalara
+          dönüştürmekten ve sürdürülebilir yazılım sistemleri
+          geliştirmekten keyif alıyorum.
         </p>
+
+
+        <!-- BUTTONS -->
 
         <div class="hero-buttons">
 
-          <a href="#projects" class="btn btn-primary">
-            View My Work
+          <a
+            href="#projects"
+            class="btn btn-primary"
+            data-i18n="projectsButton"
+          >
+            Projelerimi İncele
           </a>
+
 
           <a
             href="https://www.linkedin.com/in/emin-osman-atci"
             target="_blank"
+            rel="noopener noreferrer"
             class="btn btn-secondary"
           >
             LinkedIn
@@ -87,16 +193,33 @@
         </div>
 
 
+        <!-- TECH PREVIEW -->
+
         <div class="tech-preview">
+
           <span>Python</span>
+
           <span>FastAPI</span>
+
           <span>PostgreSQL</span>
+
           <span>Docker</span>
-          <span>AI / Computer Vision</span>
+
+          <span data-i18n="aiTag">
+            Yapay Zekâ
+          </span>
+
+          <span>
+            Computer Vision
+          </span>
+
         </div>
 
+
       </div>
+
     </section>
+
   </main>
 
 
