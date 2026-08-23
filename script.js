@@ -3,7 +3,7 @@ const translations = {
   tr: {
 
     pageTitle:
-      "Emin Osman Atcı | Bilgisayar Mühendisi",
+      "Emin Osman Atcı | Python Backend • Data • Applied AI",
 
     /* NAV */
 
@@ -32,22 +32,22 @@ const translations = {
       "Merhaba, ben Emin Osman Atcı 👋",
 
     heroFirst:
-      "Backend sistemleri ve",
+      "Python backend sistemleri,",
 
     heroHighlight:
-      "yapay zekâ uygulamaları",
+      "veri ve AI uygulamaları",
 
     heroLast:
       "geliştiriyorum.",
 
     heroDescription:
-      "Yeni mezun bir Bilgisayar Mühendisiyim. Python ile backend servisleri geliştiriyor, yapay zekâ ve bilgisayarlı görü çözümlerini gerçek uygulamalara entegre ediyorum.",
+      "Yeni mezun bir Bilgisayar Mühendisiyim. Python ile güvenilir backend servisleri ve veri katmanları geliştiriyor; AI özelliklerini gerçek uygulama akışlarına entegre ediyorum.",
 
     projectsButton:
       "Projelerimi İncele",
 
     aiTag:
-      "Yapay Zekâ",
+      "Applied AI",
 
 
     /* ABOUT */
@@ -56,16 +56,16 @@ const translations = {
       "Hakkımda",
 
     aboutTitle:
-      "Yazılım ve yapay zekânın kesişiminde ürünler geliştiriyorum.",
+      "Backend, veri ve yapay zekâyı gerçek ürünlerde bir araya getiriyorum.",
 
     aboutParagraph1:
-      "Bilgisayar mühendisliği eğitimim boyunca yazılım geliştirme, yapay zekâ ve veri odaklı sistemler üzerine çalıştım. Özellikle Python backend geliştirme ile yapay zekâ uygulamalarının kesişimi ilgimi çekiyor.",
+      "Bilgisayar mühendisliği eğitimim boyunca Python merkezli yazılım geliştirme, veri odaklı sistemler ve yapay zekâ uygulamaları üzerine çalıştım. Özellikle güvenilir backend servisleri kurup veriyi işleyen ve AI özelliklerini gerçek ürün akışlarına entegre eden sistemler geliştirmeye odaklanıyorum.",
 
     aboutParagraph2:
-      "Stajlarımda veri analitiği ve bilgisayarlı görü alanlarında deneyim kazanırken; projelerimde API tasarımından asenkron işlemeye, test otomasyonundan yapay zekâ entegrasyonlarına kadar farklı katmanlarda çalıştım.",
+      "Stajlarımda veri analitiği ve bilgisayarlı görü alanlarında deneyim kazanırken; projelerimde REST API tasarımı, PostgreSQL veri modeli, asenkron işleme, test otomasyonu ve AI entegrasyonları gibi üretim odaklı katmanlarda çalıştım.",
 
     aboutParagraph3:
-      "Kariyerime, güçlü bir yazılım mühendisliği temeli üzerinde gerçek problemlere çözüm üretebileceğim ve sorumluluk alabileceğim bir teknoloji ekibinde başlamak istiyorum.",
+      "Kariyerime Python backend ve software engineering ekseninde; veri yoğun ve AI destekli uygulamalar geliştiren, mühendislik kalitesine önem veren bir teknoloji ekibinde başlamak istiyorum.",
 
     internshipStat:
       "Teknik staj deneyimi",
@@ -89,16 +89,16 @@ const translations = {
       "Kullandığım teknolojiler.",
 
     skillsDescription:
-      "Backend geliştirmeden yapay zekâ uygulamalarına, veri katmanından geliştirme araçlarına kadar projelerimde aktif olarak kullandığım teknolojiler.",
+      "Ana odağım Python backend geliştirme ve veri katmanı; AI entegrasyonları ile test, otomasyon ve geliştirme araçları bu sistemleri uçtan uca tamamlıyor.",
 
     backendDescription:
       "API geliştirme, veri erişimi, kimlik doğrulama ve asenkron işlemler.",
 
     aiDescription:
-      "Görüntü analizi, nesne tespiti, takip sistemleri ve AI entegrasyonları.",
+      "LLM entegrasyonları, RAG ve bilgisayarlı görü çözümlerini uygulama katmanına taşıma.",
 
     dataDescription:
-      "Veri analizi, ilişkisel veritabanları ve raporlama süreçleri.",
+      "Veri modelleme, ilişkisel veritabanları, analiz ve raporlama süreçleri.",
 
     toolsDescription:
       "Test, otomasyon, versiyon kontrolü ve modern geliştirme araçları.",
@@ -113,13 +113,13 @@ const translations = {
       "Üzerinde çalıştığım projeler.",
 
     projectsDescription:
-      "Backend geliştirme ve bilgisayarlı görü alanlarında geliştirdiğim öne çıkan çalışmalar.",
+      "Python backend, veri sistemleri ve uygulamalı yapay zekâ tarafındaki mühendislik yaklaşımımı gösteren öne çıkan çalışmalar.",
 
     insightSubtitle:
       "Kurumsal Analitik Platform",
 
     insightDescription:
-      "Kurumsal verilerin işlenmesi, analiz edilmesi ve yönetici içgörülerine dönüştürülmesi için geliştirdiğim backend odaklı analitik platform.",
+      "Kurumsal verileri güvenli API'ler ve arka plan iş akışlarıyla işleyen, analiz eden ve AI destekli yönetici içgörülerine dönüştüren Python backend odaklı analitik platform.",
 
     insightPoint1:
       "FastAPI, PostgreSQL ve SQLAlchemy ile REST API ve veri odaklı backend mimarisi geliştirdim.",
@@ -164,7 +164,7 @@ const translations = {
       "Farklı sektörlerde edindiğim teknik deneyimler.",
 
     experienceDescription:
-      "Enerji ve teknoloji sektörlerinde; veri analitiği, iş zekâsı ve bilgisayarlı görü alanlarında edindiğim staj deneyimleri.",
+      "Veri analitiğinden AI Ar-Ge'ye uzanan staj deneyimlerim, veriyle çalışma ve uygulama geliştirme tarafındaki çok yönlü teknik temelimi destekliyor.",
 
     medasRole:
       "Business Intelligence & Data Analytics Stajyeri",
@@ -194,7 +194,7 @@ const translations = {
       "Birlikte çalışalım.",
 
     contactDescription:
-      "Yeni mezun yazılım mühendisliği, Python backend ve yapay zekâ uygulamaları odaklı fırsatlara açığım. Benimle e-posta veya LinkedIn üzerinden iletişime geçebilirsiniz.",
+      "Python Backend / Software Engineering başta olmak üzere, veri yoğun ve AI destekli uygulamalar geliştirebileceğim yeni mezun pozisyonlarına açığım. Benimle e-posta veya LinkedIn üzerinden iletişime geçebilirsiniz.",
 
     contactAvailability:
       "Türkiye genelindeki ve uzaktan çalışma fırsatlarına açığım.",
@@ -218,7 +218,7 @@ const translations = {
       "Yeni fırsatlara açık",
 
     footerText:
-      "Yazılım, veri ve yapay zekâ.",
+      "Python backend, data & applied AI.",
 
     backToTop:
       "Yukarı dön ↑"
@@ -229,7 +229,7 @@ const translations = {
   en: {
 
     pageTitle:
-      "Emin Osman Atcı | Computer Engineer",
+      "Emin Osman Atcı | Python Backend • Data • Applied AI",
 
     /* NAV */
 
@@ -258,22 +258,22 @@ const translations = {
       "Hi, I'm Emin Osman Atcı 👋",
 
     heroFirst:
-      "I build backend systems and",
+      "I build Python backend systems,",
 
     heroHighlight:
-      "AI applications",
+      "data & AI-powered applications",
 
     heroLast:
       ".",
 
     heroDescription:
-      "I'm a recent Computer Engineering graduate. I build Python backend services and integrate artificial intelligence and computer vision solutions into real-world applications.",
+      "I'm a recent Computer Engineering graduate focused on Python backend engineering, data systems and applied AI. I build APIs and data layers, then integrate AI capabilities into real-world applications.",
 
     projectsButton:
       "View My Projects",
 
     aiTag:
-      "Artificial Intelligence",
+      "Applied AI",
 
 
     /* ABOUT */
@@ -282,16 +282,16 @@ const translations = {
       "About Me",
 
     aboutTitle:
-      "I build products at the intersection of software engineering and AI.",
+      "I bring backend engineering, data and AI together in working products.",
 
     aboutParagraph1:
-      "Throughout my Computer Engineering education, I focused on software development, artificial intelligence and data-driven systems. I'm especially interested in the intersection of Python backend engineering and AI applications.",
+      "Throughout my Computer Engineering education, I focused on Python-centric software development, data-driven systems and AI applications. I'm especially interested in building reliable backend services that process data and integrate AI capabilities into real product workflows.",
 
     aboutParagraph2:
-      "My internships gave me hands-on experience in data analytics and computer vision, while my projects allowed me to work across different layers of software — from API design and asynchronous processing to test automation and AI integrations.",
+      "My internships gave me hands-on experience in data analytics and computer vision, while my projects exposed me to production-oriented layers such as REST API design, PostgreSQL data models, asynchronous processing, test automation and AI integrations.",
 
     aboutParagraph3:
-      "I'm looking to begin my career in a technology team where I can build on a strong software engineering foundation, take ownership and contribute to solutions for real-world problems.",
+      "I'm looking to begin my career in Python backend and software engineering, building data-intensive and AI-powered applications in a team that values engineering quality and ownership.",
 
     internshipStat:
       "Technical internships",
@@ -315,16 +315,16 @@ const translations = {
       "Technologies I work with.",
 
     skillsDescription:
-      "Technologies I actively use across backend development, AI applications, data systems and modern software development workflows.",
+      "My core focus is Python backend development and the data layer, complemented by AI integrations, testing, automation and modern development tooling.",
 
     backendDescription:
       "API development, data access, authentication and asynchronous processing.",
 
     aiDescription:
-      "Image analysis, object detection, tracking systems and AI integrations.",
+      "LLM integrations, RAG and computer vision capabilities brought into application workflows.",
 
     dataDescription:
-      "Data analysis, relational databases and reporting workflows.",
+      "Data modeling, relational databases, analysis and reporting workflows.",
 
     toolsDescription:
       "Testing, automation, version control and modern development tooling.",
@@ -339,13 +339,13 @@ const translations = {
       "Projects I've worked on.",
 
     projectsDescription:
-      "Selected projects across backend engineering and computer vision.",
+      "Selected projects that demonstrate my engineering approach across Python backend, data systems and applied AI.",
 
     insightSubtitle:
       "Enterprise Analytics Platform",
 
     insightDescription:
-      "A backend-focused analytics platform designed to process enterprise data and transform it into actionable management insights.",
+      "A Python backend-focused analytics platform that processes enterprise data through secure APIs and background workflows, turning it into analytics and AI-assisted management insights.",
 
     insightPoint1:
       "Built REST APIs and a data-driven backend architecture using FastAPI, PostgreSQL and SQLAlchemy.",
@@ -390,7 +390,7 @@ const translations = {
       "Technical experience across different industries.",
 
     experienceDescription:
-      "Internship experience across the energy and technology industries, with a focus on data analytics, business intelligence and computer vision.",
+      "Internship experience spanning data analytics and AI R&D, strengthening my foundation in both working with data and building intelligent applications.",
 
     medasRole:
       "Business Intelligence & Data Analytics Intern",
@@ -420,7 +420,7 @@ const translations = {
       "Let's work together.",
 
     contactDescription:
-      "I'm open to junior software engineering, Python backend and AI application opportunities. Feel free to reach out via email or LinkedIn.",
+      "I'm primarily open to junior Python Backend / Software Engineering roles, especially where I can build data-intensive and AI-powered applications. Feel free to reach out via email or LinkedIn.",
 
     contactAvailability:
       "Open to opportunities across Türkiye and remote roles.",
@@ -444,7 +444,7 @@ const translations = {
       "Open to opportunities",
 
     footerText:
-      "Software, data and artificial intelligence.",
+      "Python backend, data & applied AI.",
 
     backToTop:
       "Back to top ↑"
