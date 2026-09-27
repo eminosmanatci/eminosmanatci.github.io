@@ -454,7 +454,7 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("languageToggle");
 
     let currentLanguage =
-        localStorage.getItem("portfolioLanguage") || "en";
+        localStorage.getItem("portfolioLanguage") || "tr";
 
 
     function updateLanguage(language) {
