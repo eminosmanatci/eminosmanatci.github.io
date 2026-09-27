@@ -1,1083 +1,996 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+    <title>Emin Osman Atcı — Computer Engineer</title>
 
-  <meta
-    name="description"
-    content="Emin Osman Atcı - Python backend, veri odaklı sistemler ve uygulamalı yapay zekâ çözümleri geliştiren Bilgisayar Mühendisi."
-  >
+    <meta
+        name="description"
+        content="Emin Osman Atcı — Computer Engineer building backend systems, data products and AI-powered applications."
+    >
 
-  <title>Emin Osman Atcı | Python Backend • Data • Applied AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link rel="stylesheet" href="style.css?v=6">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- =========================
-       NAVBAR
-  ========================== -->
+<header class="site-header">
+    <div class="container header-inner">
 
-  <header class="navbar">
-
-    <div class="container nav-container">
-
-      <a href="#" class="logo">
-        Emin<span>.</span>
-      </a>
-
-      <nav class="nav-links">
-
-        <a href="#about" data-i18n="navAbout">
-          Hakkımda
+        <a href="#top" class="brand">
+            Emin Osman Atcı
         </a>
 
-        <a href="#skills" data-i18n="navSkills">
-          Yetkinlikler
-        </a>
+        <nav class="main-nav">
+            <a href="#work" data-i18n="nav.work">Work</a>
+            <a href="#experience" data-i18n="nav.experience">Experience</a>
+            <a href="#recognition" data-i18n="nav.recognition">Recognition</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
 
-        <a href="#projects" data-i18n="navProjects">
-          Projeler
-        </a>
+        <div class="header-actions">
+            <a
+                href="assets/Emin_Osman_Atci_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cv-link"
+                data-i18n="nav.cv"
+            >
+                CV
+            </a>
 
-        <a href="#experience" data-i18n="navExperience">
-          Deneyim
-        </a>
+            <button
+                type="button"
+                class="language-toggle"
+                id="languageToggle"
+                aria-label="Switch language"
+            >
+                TR
+            </button>
 
-        <a href="#contact" data-i18n="navContact">
-          İletişim
-        </a>
-
-      </nav>
-
-      <div class="nav-actions">
-
-        <div class="language-switcher">
-
-          <button
-            class="lang-btn active"
-            data-lang="tr"
-          >
-            TR
-          </button>
-
-          <span>/</span>
-
-          <button
-            class="lang-btn"
-            data-lang="en"
-          >
-            EN
-          </button>
-
+            <button
+                type="button"
+                class="nav-toggle"
+                id="navToggle"
+                aria-label="Toggle menu"
+                aria-expanded="false"
+                aria-controls="mobileNav"
+            >
+                <span></span>
+            </button>
         </div>
-
-        <a
-          href="https://github.com/eminosmanatci"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="github-btn"
-        >
-          GitHub
-        </a>
-
-      </div>
 
     </div>
+</header>
 
-  </header>
-
-
-  <main>
-
-    <!-- =========================
-         HERO
-    ========================== -->
-
-    <section class="hero">
-
-      <div class="container hero-content">
-
-        <div class="status">
-
-          <span class="status-dot"></span>
-
-          <span data-i18n="status">
-            Yeni fırsatlara açığım
-          </span>
-
-        </div>
-
-        <p
-          class="intro"
-          data-i18n="intro"
-        >
-          Merhaba, ben Emin Osman Atcı 👋
-        </p>
-
-        <h1>
-
-          <span data-i18n="heroFirst">
-            Python backend sistemleri,
-          </span>
-
-          <span
-            class="highlight"
-            data-i18n="heroHighlight"
-          >
-            veri ve AI uygulamaları
-          </span>
-
-          <span data-i18n="heroLast">
-            geliştiriyorum.
-          </span>
-
-        </h1>
-
-        <p
-          class="hero-description"
-          data-i18n="heroDescription"
-        >
-          Yeni mezun bir Bilgisayar Mühendisiyim. Python ile güvenilir
-          backend servisleri ve veri katmanları geliştiriyor; AI özelliklerini
-          gerçek uygulama akışlarına entegre ediyorum.
-        </p>
-
-        <div class="hero-buttons">
-
-          <a
-            href="#projects"
-            class="btn btn-primary"
-            data-i18n="projectsButton"
-          >
-            Projelerimi İncele
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/emin-osman-atci"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-secondary"
-          >
-            LinkedIn
-          </a>
-
-        </div>
-
-        <div class="tech-preview">
-
-          <span>Python</span>
-          <span>FastAPI</span>
-          <span>PostgreSQL</span>
-          <span>Docker</span>
-
-          <span>Redis / Celery</span>
-
-          <span data-i18n="aiTag">
-            Applied AI
-          </span>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         ABOUT
-    ========================== -->
-
-    <section
-      class="section"
-      id="about"
+<nav class="mobile-nav" id="mobileNav">
+    <a href="#work" data-i18n="nav.work">Work</a>
+    <a href="#experience" data-i18n="nav.experience">Experience</a>
+    <a href="#recognition" data-i18n="nav.recognition">Recognition</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+    <a
+        href="assets/Emin_Osman_Atci_CV.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="cv-link"
+        data-i18n="nav.cv"
     >
+        CV
+    </a>
+</nav>
 
-      <div class="container">
 
-        <div class="section-heading">
+<main id="top">
 
-          <span
-            class="section-label"
-            data-i18n="aboutLabel"
-          >
-            Hakkımda
-          </span>
+    <!-- HERO -->
+    <section class="hero section">
+        <div class="container">
 
-          <h2 data-i18n="aboutTitle">
-            Backend, veri ve yapay zekâyı gerçek ürünlerde bir araya getiriyorum.
-          </h2>
+            <div class="section-index">
+                <span>01</span>
+                <span data-i18n="hero.label">INTRO</span>
+            </div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow" data-i18n="hero.role">
+                    COMPUTER ENGINEER
+                </p>
+
+                <h1 data-i18n="hero.title">
+                    I build backend systems, data products and AI-powered applications.
+                </h1>
+
+                <p class="hero-description" data-i18n="hero.description">
+                    I build software products for real-world problems using Python,
+                    modern backend architectures, data systems and AI integrations.
+                </p>
+
+                <div class="hero-links">
+                    <a
+                        href="https://github.com/eminosmanatci"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub ↗
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/emin-osman-atci"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn ↗
+                    </a>
+
+                    <a href="mailto:atcieminosman@gmail.com">
+                        Email ↗
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- WORK -->
+    <section id="work" class="section work-section">
+
+        <div class="container">
+
+            <div class="section-index">
+                <span>02</span>
+                <span data-i18n="work.label">SELECTED WORK</span>
+            </div>
+
+            <div class="section-heading">
+                <h2 data-i18n="work.title">
+                    Systems built to solve real problems.
+                </h2>
+            </div>
+
+
+            <!-- INSIGHTFLOW -->
+            <article class="project project-featured">
+
+                <div class="project-meta">
+                    <span>01</span>
+                    <span data-i18n="projects.insightflow.status">
+                        COMPLETED
+                    </span>
+                </div>
+
+                <div class="project-header">
+
+                    <div>
+                        <p class="project-category">
+                            SOFTWARE · DATA · AI
+                        </p>
+
+                        <h3>InsightFlow</h3>
+
+                        <p
+                            class="project-summary"
+                            data-i18n="projects.insightflow.summary"
+                        >
+                            Enterprise analytics platform that transforms CSV sales
+                            data into interactive dashboards and AI-generated
+                            executive insights.
+                        </p>
+                    </div>
+
+                    <a
+                        href="https://github.com/eminosmanatci/insightflow"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        GitHub ↗
+                    </a>
+
+                </div>
+
+
+                <div class="project-visual">
+                    <img
+                        src="assets/insightflow-dashboard.png"
+                        alt="InsightFlow analytics dashboard"
+                    >
+                </div>
+
+
+                <div class="project-body">
+
+                    <div class="architecture">
+
+                        <div class="architecture-label">
+                            <span data-i18n="common.architecture">
+                                ARCHITECTURE
+                            </span>
+                        </div>
+
+                        <div class="architecture-flow">
+                            <span>CSV</span>
+                            <span>→</span>
+                            <span>FastAPI</span>
+                            <span>→</span>
+                            <span>Celery / Redis</span>
+                            <span>→</span>
+                            <span>PostgreSQL</span>
+                            <span>→</span>
+                            <span>Analytics API</span>
+                            <span>→</span>
+                            <span>React</span>
+                            <span>→</span>
+                            <span>LLM</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-details">
+
+                        <div class="detail-block">
+                            <span class="detail-label" data-i18n="common.engineering">
+                                ENGINEERING
+                            </span>
+
+                            <p data-i18n="projects.insightflow.engineering">
+                                Multi-tenant architecture with organization-scoped
+                                data isolation, asynchronous processing and a
+                                structured dataset lifecycle.
+                            </p>
+                        </div>
+
+
+                        <div class="detail-block">
+                            <span class="detail-label" data-i18n="common.stack">
+                                STACK
+                            </span>
+
+                            <p>
+                                FastAPI · React · PostgreSQL · SQLAlchemy ·
+                                Celery · Redis · Alembic · Docker
+                            </p>
+                        </div>
+
+
+                        <div class="detail-block">
+                            <span class="detail-label" data-i18n="common.quality">
+                                QUALITY
+                            </span>
+
+                            <p data-i18n="projects.insightflow.quality">
+                                62 backend tests with approximately 95% test coverage,
+                                duplicate dataset detection, validation and cleanup.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- AGROBYTE -->
+            <article class="project">
+
+                <div class="project-meta">
+                    <span>02</span>
+                    <span data-i18n="projects.agrobyte.status">
+                        TEKNOFEST 2025 FINALIST
+                    </span>
+                </div>
+
+                <div class="project-header">
+
+                    <div>
+                        <p class="project-category">
+                            COMPUTER VISION · AI
+                        </p>
+
+                        <h3>AgroByte Vision</h3>
+
+                        <p
+                            class="project-summary"
+                            data-i18n="projects.agrobyte.summary"
+                        >
+                            Computer vision system for agricultural monitoring,
+                            animal tracking and automated anomaly detection.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="project-visual">
+                    <img
+                        src="assets/agrobyte-vision.png"
+                        alt="AgroByte Vision computer vision system"
+                    >
+                </div>
+
+
+                <div class="project-body">
+
+                    <div class="project-details">
+
+                        <div class="detail-block">
+                            <span class="detail-label" data-i18n="common.focus">
+                                FOCUS
+                            </span>
+
+                            <p data-i18n="projects.agrobyte.focus">
+                                Cow identification and tracking, behavior analysis,
+                                anomaly detection, hay-bale counting and smoke/fire detection.
+                            </p>
+                        </div>
+
+
+                        <div class="detail-block">
+                            <span class="detail-label" data-i18n="common.technologies">
+                                TECHNOLOGIES
+                            </span>
+
+                            <p>
+                                Python · PyTorch · YOLO · OpenCV · NumPy
+                            </p>
+                        </div>
+
+
+                        <div class="detail-block">
+                            <span class="detail-label" data-i18n="common.role">
+                                ROLE
+                            </span>
+
+                            <p data-i18n="projects.agrobyte.role">
+                                AI Unit Responsible
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- SENTINELVISION -->
+            <article class="project">
+
+                <div class="project-meta">
+                    <span>03</span>
+                    <span data-i18n="projects.sentinel.status">
+                        IN DEVELOPMENT
+                    </span>
+                </div>
+
+                <div class="project-header">
+
+                    <div>
+                        <p class="project-category">
+                            AI · RAG · VIDEO ANALYTICS
+                        </p>
+
+                        <h3>SentinelVision</h3>
+
+                        <p
+                            class="project-summary"
+                            data-i18n="projects.sentinel.summary"
+                        >
+                            AI-powered security video analytics platform with
+                            retrieval-augmented querying over detected events.
+                        </p>
+                    </div>
+
+                    <a
+                        href="https://github.com/eminosmanatci/sentinel-vision"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
+                        GitHub ↗
+                    </a>
+
+                </div>
+
+
+                <div class="project-visual project-placeholder">
+
+                    <div class="placeholder-content">
+                        <span>SENTINELVISION</span>
+                        <small data-i18n="projects.sentinel.placeholder">
+                            CURRENTLY IN DEVELOPMENT
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <div class="project-body">
+
+                    <div class="project-details">
+
+                        <div class="detail-block">
+                            <span class="detail-label" data-i18n="common.stack">
+                                STACK
+                            </span>
+
+                            <p>
+                                FastAPI · PostgreSQL · pgvector ·
+                                YOLOv8 · Celery · Redis · React · Docker
+                            </p>
+                        </div>
+
+
+                        <div class="detail-block">
+                            <span class="detail-label" data-i18n="common.ai">
+                                AI
+                            </span>
+
+                            <p>
+                                GPT-4o-mini · Text Embeddings · RAG
+                            </p>
+                        </div>
+
+
+                        <div class="detail-block">
+                            <span class="detail-label" data-i18n="common.status">
+                                STATUS
+                            </span>
+
+                            <p data-i18n="projects.sentinel.statusText">
+                                Active development
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- OTHER PROJECTS -->
+            <div class="other-projects">
+
+                <div class="other-projects-heading">
+                    <span data-i18n="other.label">OTHER PROJECTS</span>
+                </div>
+
+
+                <div class="other-project">
+
+                    <div class="other-project-number">04</div>
+
+                    <div class="other-project-content">
+
+                        <h3>Task Management API</h3>
+
+                        <p data-i18n="projects.task.summary">
+                            Full-stack task management platform built around
+                            Clean Architecture.
+                        </p>
+
+                        <span>
+                            FastAPI · React · PostgreSQL · JWT · Docker
+                        </span>
+
+                    </div>
+
+                    <a
+                        href="https://github.com/eminosmanatci/task-management-api"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+
+                <div class="other-project">
+
+                    <div class="other-project-number">05</div>
+
+                    <div class="other-project-content">
+
+                        <h3>Fire &amp; Smoke Detection</h3>
+
+                        <p data-i18n="projects.fire.summary">
+                            Real-time fire and smoke detection with
+                            cloud-based event logging.
+                        </p>
+
+                        <span>
+                            YOLOv11 · YOLOv8 · OpenCV · Firebase
+                        </span>
+
+                    </div>
+
+                    <a
+                        href="https://github.com/eminosmanatci/fire-smoke-detection"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        ↗
+                    </a>
+
+                </div>
+
+
+                <div class="other-project">
+
+                    <div class="other-project-number">06</div>
+
+                    <div class="other-project-content">
+
+                        <h3>Kitapla</h3>
+
+                        <p data-i18n="projects.kitapla.summary">
+                            Android application for discovering,
+                            organizing and tracking books.
+                        </p>
+
+                        <span>
+                            Java · Android SDK · Material Design
+                        </span>
+
+                    </div>
+
+                    <div class="other-project-type" data-i18n="projects.kitapla.type">
+                        MOBILE
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
-
-        <div class="about-grid">
-
-          <div class="about-main">
-
-            <p data-i18n="aboutParagraph1">
-              Bilgisayar mühendisliği eğitimim boyunca Python merkezli yazılım geliştirme,
-              veri odaklı sistemler ve yapay zekâ uygulamaları üzerine çalıştım.
-              Özellikle güvenilir backend servisleri kurup veriyi işleyen ve AI özelliklerini
-              gerçek ürün akışlarına entegre eden sistemler geliştirmeye odaklanıyorum.
-            </p>
-
-            <p data-i18n="aboutParagraph2">
-              Stajlarımda veri analitiği ve bilgisayarlı görü alanlarında deneyim kazanırken;
-              projelerimde REST API tasarımı, PostgreSQL veri modeli, asenkron işleme,
-              test otomasyonu ve AI entegrasyonları gibi üretim odaklı katmanlarda çalıştım.
-            </p>
-
-            <p data-i18n="aboutParagraph3">
-              Kariyerime Python backend ve software engineering ekseninde; veri yoğun ve
-              AI destekli uygulamalar geliştiren, mühendislik kalitesine önem veren
-              bir teknoloji ekibinde başlamak istiyorum.
-            </p>
-
-          </div>
-
-          <div class="about-side">
-
-            <div class="about-stat">
-              <span class="stat-number">2</span>
-
-              <span
-                class="stat-label"
-                data-i18n="internshipStat"
-              >
-                Teknik staj deneyimi
-              </span>
-            </div>
-
-            <div class="about-stat">
-              <span class="stat-number">2</span>
-
-              <span
-                class="stat-label"
-                data-i18n="projectStat"
-              >
-                Öne çıkan proje
-              </span>
-            </div>
-
-            <div class="about-stat">
-              <span class="stat-number">95%</span>
-
-              <span
-                class="stat-label"
-                data-i18n="coverageStat"
-              >
-                Projede test kapsamı
-              </span>
-            </div>
-
-            <div class="about-stat">
-              <span class="stat-number">2025</span>
-
-              <span
-                class="stat-label"
-                data-i18n="teknofestStat"
-              >
-                TEKNOFEST Finalisti
-              </span>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
 
     </section>
 
 
-    <!-- =========================
-         SKILLS
-    ========================== -->
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
 
-    <section
-      class="section skills-section"
-      id="skills"
-    >
+        <div class="container">
 
-      <div class="container">
+            <div class="section-index">
+                <span>03</span>
+                <span data-i18n="experience.label">EXPERIENCE</span>
+            </div>
 
-        <div class="section-heading">
+            <div class="section-heading">
+                <h2 data-i18n="experience.title">
+                    Engineering experience across AI and data.
+                </h2>
+            </div>
 
-          <span
-            class="section-label"
-            data-i18n="skillsLabel"
-          >
-            Teknik Yetkinlikler
-          </span>
 
-          <h2 data-i18n="skillsTitle">
-            Kullandığım teknolojiler.
-          </h2>
+            <div class="experience-list">
 
-          <p
-            class="section-description"
-            data-i18n="skillsDescription"
-          >
-            Ana odağım Python backend geliştirme ve veri katmanı;
-            AI entegrasyonları ile test, otomasyon ve geliştirme araçları
-            bu sistemleri uçtan uca tamamlıyor.
-          </p>
+                <article class="experience-item">
+
+                    <div class="experience-date">
+                        2024
+                    </div>
+
+                    <div class="experience-main">
+
+                        <div class="experience-company">
+                            ArVis Technology
+                        </div>
+
+                        <h3 data-i18n="experience.arvis.role">
+                            AI R&amp;D Intern
+                        </h3>
+
+                        <p data-i18n="experience.arvis.description">
+                            Worked on computer vision and AI-based video
+                            analytics using Python, OpenCV and YOLO.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="experience-item">
+
+                    <div class="experience-date">
+                        2025
+                    </div>
+
+                    <div class="experience-main">
+
+                        <div class="experience-company">
+                            MEDAŞ
+                        </div>
+
+                        <h3 data-i18n="experience.medas.role">
+                            Business Intelligence &amp; Data Analytics Intern
+                        </h3>
+
+                        <p data-i18n="experience.medas.description">
+                            Worked with Oracle and SQL for data analysis,
+                            reporting and business intelligence workflows,
+                            with exposure to Power BI, data warehouses
+                            and real-time data systems.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
 
         </div>
-
-
-        <div class="skills-grid">
-
-          <article class="skill-card">
-
-            <div class="skill-icon">01</div>
-
-            <h3>
-              Backend Development
-            </h3>
-
-            <p data-i18n="backendDescription">
-              API geliştirme, veri erişimi,
-              kimlik doğrulama ve asenkron işlemler.
-            </p>
-
-            <div class="skill-tags">
-
-              <span>Python</span>
-              <span>FastAPI</span>
-              <span>Flask</span>
-              <span>REST API</span>
-              <span>SQLAlchemy</span>
-              <span>Redis</span>
-              <span>Celery</span>
-
-            </div>
-
-          </article>
-
-
-          <article class="skill-card">
-
-            <div class="skill-icon">02</div>
-
-            <h3>
-              Data & Database
-            </h3>
-
-            <p data-i18n="dataDescription">
-              Veri modelleme, ilişkisel veritabanları,
-              analiz ve raporlama süreçleri.
-            </p>
-
-            <div class="skill-tags">
-
-              <span>SQL</span>
-              <span>PostgreSQL</span>
-              <span>Pandas</span>
-              <span>Power BI</span>
-              <span>Alembic</span>
-
-            </div>
-
-          </article>
-
-
-          <article class="skill-card">
-
-            <div class="skill-icon">03</div>
-
-            <h3>
-              Applied AI
-            </h3>
-
-            <p data-i18n="aiDescription">
-              LLM entegrasyonları, RAG ve bilgisayarlı görü
-              çözümlerini uygulama katmanına taşıma.
-            </p>
-
-            <div class="skill-tags">
-
-              <span>RAG</span>
-              <span>LLM Integrations</span>
-              <span>PyTorch</span>
-              <span>YOLO</span>
-              <span>OpenCV</span>
-              <span>Computer Vision</span>
-
-            </div>
-
-          </article>
-
-
-          <article class="skill-card">
-
-            <div class="skill-icon">04</div>
-
-            <h3>
-              Engineering Tools
-            </h3>
-
-            <p data-i18n="toolsDescription">
-              Test, otomasyon, versiyon kontrolü
-              ve modern geliştirme araçları.
-            </p>
-
-            <div class="skill-tags">
-
-              <span>Docker</span>
-              <span>Git</span>
-              <span>GitHub Actions</span>
-              <span>Pytest</span>
-              <span>Linux</span>
-              <span>React</span>
-              <span>JavaScript</span>
-
-            </div>
-
-          </article>
-
-        </div>
-
-      </div>
 
     </section>
 
 
-    <!-- =========================
-         PROJECTS
-    ========================== -->
+    <!-- RECOGNITION -->
+    <section id="recognition" class="section">
 
-    <section
-      class="section projects-section"
-      id="projects"
-    >
+        <div class="container">
 
-      <div class="container">
+            <div class="section-index">
+                <span>04</span>
+                <span data-i18n="recognition.label">RECOGNITION</span>
+            </div>
 
-        <div class="section-heading">
+            <div class="section-heading">
+                <h2 data-i18n="recognition.title">
+                    Selected programs, competitions and achievements.
+                </h2>
+            </div>
 
-          <span
-            class="section-label"
-            data-i18n="projectsLabel"
-          >
-            Projeler
-          </span>
 
-          <h2 data-i18n="projectsTitle">
-            Üzerinde çalıştığım projeler.
-          </h2>
+            <div class="recognition-list">
 
-          <p
-            class="section-description"
-            data-i18n="projectsDescription"
-          >
-            Python backend, veri sistemleri ve uygulamalı yapay zekâ tarafındaki
-            mühendislik yaklaşımımı gösteren öne çıkan çalışmalar.
-          </p>
+                <article class="recognition-item">
+
+                    <div class="recognition-year">
+                        2026
+                    </div>
+
+                    <div class="recognition-content">
+
+                        <h3>
+                            TEKNOFEST — AgroByte Aqua
+                        </h3>
+
+                        <p data-i18n="recognition.teknofest2026">
+                            Finalist in the Agricultural Technologies category
+                            with an AI-powered smart fish cage monitoring project.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="recognition-item">
+
+                    <div class="recognition-year">
+                        2025
+                    </div>
+
+                    <div class="recognition-content">
+
+                        <h3>
+                            TEKNOFEST — AgroByte Vision
+                        </h3>
+
+                        <p data-i18n="recognition.teknofest2025">
+                            Finalist in the Agricultural Technologies category
+                            with an AI-powered computer vision project.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="recognition-item">
+
+                    <div class="recognition-year">
+                        2025
+                    </div>
+
+                    <div class="recognition-content">
+
+                        <h3>
+                            Google AI &amp; Technology Academy
+                        </h3>
+
+                        <p data-i18n="recognition.google">
+                            Selected for an eight-month program covering
+                            AI applications development, web application
+                            development and entrepreneurship.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
 
         </div>
-
-
-        <!-- INSIGHTFLOW -->
-
-        <article class="project">
-
-          <div class="project-info">
-
-            <div class="project-top">
-
-              <span class="project-number">
-                01
-              </span>
-
-              <span class="project-category">
-                Backend / Data / AI
-              </span>
-
-            </div>
-
-            <h3>
-              InsightFlow
-            </h3>
-
-            <p
-              class="project-subtitle"
-              data-i18n="insightSubtitle"
-            >
-              Kurumsal Analitik Platform
-            </p>
-
-            <p
-              class="project-description"
-              data-i18n="insightDescription"
-            >
-              Kurumsal verileri güvenli API'ler ve arka plan iş akışlarıyla işleyen,
-              analiz eden ve AI destekli yönetici içgörülerine dönüştüren
-              Python backend odaklı analitik platform.
-            </p>
-
-            <ul class="project-points">
-
-              <li data-i18n="insightPoint1">
-                FastAPI, PostgreSQL ve SQLAlchemy ile REST API
-                ve veri odaklı backend mimarisi geliştirdim.
-              </li>
-
-              <li data-i18n="insightPoint2">
-                JWT tabanlı kimlik doğrulama, rol bazlı
-                yetkilendirme ve Redis/Celery ile arka plan
-                veri işleme süreçlerini oluşturdum.
-              </li>
-
-              <li data-i18n="insightPoint3">
-                62 backend testiyle yaklaşık %95 test kapsamına
-                ulaştım ve GitHub Actions ile test süreçlerini
-                otomatikleştirdim.
-              </li>
-
-            </ul>
-
-            <div class="project-tags">
-
-              <span>Python</span>
-              <span>FastAPI</span>
-              <span>PostgreSQL</span>
-              <span>SQLAlchemy</span>
-              <span>Redis</span>
-              <span>Celery</span>
-              <span>Docker</span>
-              <span>Pytest</span>
-              <span>GitHub Actions</span>
-              <span>AI Insights</span>
-
-            </div>
-
-          </div>
-
-
-          <div class="project-visual project-image">
-
-            <img
-              src="assets/insightflow-dashboard.png"
-              alt="InsightFlow kurumsal analitik platformu dashboard ekranı"
-            >
-
-            <div class="image-overlay">
-
-              <span class="image-badge">
-
-                <strong>
-                  ~95%
-                </strong>
-
-                <span data-i18n="coverageVisual">
-                  Test Kapsamı
-                </span>
-
-              </span>
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-        <!-- AGROBYTE -->
-
-        <article class="project project-reverse">
-
-          <div class="project-info">
-
-            <div class="project-top">
-
-              <span class="project-number">
-                02
-              </span>
-
-              <span class="project-category">
-                AI / Computer Vision
-              </span>
-
-            </div>
-
-            <div class="project-title-row">
-
-              <h3>
-                AgroByte Vision
-              </h3>
-
-              <span
-                class="project-badge"
-                data-i18n="teknofestBadge"
-              >
-                TEKNOFEST 2025 Finalisti
-              </span>
-
-            </div>
-
-            <p
-              class="project-subtitle"
-              data-i18n="agroSubtitle"
-            >
-              Görüntü İşleme Tabanlı Hayvan Takip Sistemi
-            </p>
-
-            <p
-              class="project-description"
-              data-i18n="agroDescription"
-            >
-              Çiftlik ortamındaki inekleri kamera görüntülerinden
-              tespit eden, kimlik bazlı takip eden ve davranışlarını
-              analiz ederek olası anomalileri izleyen bilgisayarlı
-              görü sistemi.
-            </p>
-
-            <ul class="project-points">
-
-              <li data-i18n="agroPoint1">
-                YOLO ve OpenCV tabanlı görüntü işleme ile
-                gerçek zamanlı inek tespiti ve kimlik bazlı
-                Multi-Object Tracking gerçekleştirdim.
-              </li>
-
-              <li data-i18n="agroPoint2">
-                Hayvanların ayakta durma, oturma ve yemleme
-                gibi aktivitelerini görüntü üzerinden analiz
-                eden bir yapı geliştirdim.
-              </li>
-
-              <li data-i18n="agroPoint3">
-                Davranışların zaman içerisindeki değişimini
-                takip ederek olası anomalilerin belirlenmesine
-                yönelik izleme altyapısı üzerinde çalıştım.
-              </li>
-
-            </ul>
-
-            <div class="project-tags">
-
-              <span>Python</span>
-              <span>YOLO</span>
-              <span>OpenCV</span>
-              <span>Object Detection</span>
-              <span>Multi-Object Tracking</span>
-              <span>Activity Analysis</span>
-              <span>Anomaly Detection</span>
-
-            </div>
-
-          </div>
-
-
-          <div class="project-visual project-image">
-
-            <img
-              src="assets/agrobyte-vision.png"
-              alt="AgroByte Vision inek tespiti ve aktivite takip sistemi"
-            >
-
-            <div class="image-overlay">
-
-              <span
-                class="image-badge"
-                data-i18n="realTimeAnalysis"
-              >
-                Gerçek Zamanlı Analiz
-              </span>
-
-            </div>
-
-          </div>
-
-        </article>
-
-      </div>
 
     </section>
 
 
-    <!-- =========================
-         EXPERIENCE
-    ========================== -->
+    <!-- EDUCATION -->
+    <section id="education" class="section">
 
-    <section
-      class="section experience-section"
-      id="experience"
-    >
+        <div class="container">
 
-      <div class="container">
+            <div class="section-index">
+                <span>05</span>
+                <span data-i18n="education.label">EDUCATION</span>
+            </div>
 
-        <div class="section-heading">
+            <div class="section-heading">
+                <h2 data-i18n="education.title">
+                    Computer Engineering foundation.
+                </h2>
+            </div>
 
-          <span
-            class="section-label"
-            data-i18n="experienceLabel"
-          >
-            Deneyim
-          </span>
 
-          <h2 data-i18n="experienceTitle">
-            Farklı sektörlerde edindiğim teknik deneyimler.
-          </h2>
+            <div class="education-layout">
 
-          <p
-            class="section-description"
-            data-i18n="experienceDescription"
-          >
-            Veri analitiğinden AI Ar-Ge'ye uzanan staj deneyimlerim,
-            veriyle çalışma ve uygulama geliştirme tarafındaki
-            çok yönlü teknik temelimi destekliyor.
-          </p>
+                <div class="education-main">
+
+                    <p class="eyebrow" data-i18n="education.degree">
+                        B.Sc. COMPUTER ENGINEERING
+                    </p>
+
+                    <h3>
+                        Konya Gıda ve Tarım Üniversitesi
+                    </h3>
+
+                    <p data-i18n="education.description">
+                        English-medium Computer Engineering program.
+                    </p>
+
+                </div>
+
+
+                <div class="coursework">
+
+                    <span
+                        class="detail-label"
+                        data-i18n="education.coursework"
+                    >
+                        RELEVANT COURSEWORK
+                    </span>
+
+                    <div class="course-list">
+                        <span data-i18n="courses.ml">Machine Learning</span>
+                        <span data-i18n="courses.deep">Deep Learning</span>
+                        <span data-i18n="courses.se">Software Engineering</span>
+                        <span data-i18n="courses.modern">Modern Programming Languages</span>
+                        <span data-i18n="courses.distributed">Distributed Systems</span>
+                        <span data-i18n="courses.algorithms">Algorithms</span>
+                        <span data-i18n="courses.oop">Object-Oriented Programming</span>
+                        <span data-i18n="courses.mobile">Mobile Programming</span>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
-
-
-        <div class="experience-list">
-
-          <!-- MEDAS -->
-
-          <article class="experience-card">
-
-            <div class="experience-year">
-              2025
-            </div>
-
-            <div class="experience-main">
-
-              <div class="experience-company">
-                MEDAŞ
-              </div>
-
-              <h3 data-i18n="medasRole">
-                Business Intelligence & Data Analytics Stajyeri
-              </h3>
-
-              <div class="experience-meta">
-
-                <span data-i18n="medasDate">
-                  Temmuz 2025 — Ağustos 2025
-                </span>
-
-                <span>
-                  Konya
-                </span>
-
-              </div>
-
-              <p data-i18n="medasDescription">
-                Enerji sektöründeki büyük ölçekli veriler üzerinde
-                SQL ile analiz ve raporlama çalışmaları gerçekleştirdim.
-                Sorgu performansının iyileştirilmesi üzerine çalışırken,
-                Power BI ile karar destek süreçlerinde kullanılabilecek
-                etkileşimli dashboard ve analizler geliştirdim.
-              </p>
-
-            </div>
-
-            <div class="experience-tech">
-
-              <span>SQL</span>
-              <span>Power BI</span>
-              <span>Data Analysis</span>
-              <span>Reporting</span>
-              <span>Query Optimization</span>
-
-            </div>
-
-          </article>
-
-
-          <!-- ARVIS -->
-
-          <article class="experience-card">
-
-            <div class="experience-year">
-              2024
-            </div>
-
-            <div class="experience-main">
-
-              <div class="experience-company">
-                ArVis Teknoloji A.Ş.
-              </div>
-
-              <h3 data-i18n="arvisRole">
-                AI R&D Stajyeri
-              </h3>
-
-              <div class="experience-meta">
-
-                <span data-i18n="arvisDate">
-                  Temmuz 2024 — Eylül 2024
-                </span>
-
-                <span>
-                  İstanbul
-                </span>
-
-              </div>
-
-              <p data-i18n="arvisDescription">
-                Bilgisayarlı görü ve derin öğrenme tabanlı
-                Ar-Ge çalışmalarında görev aldım. OpenCV ve YOLO ile
-                nesne tespiti, çoklu nesne takibi ve insan davranışı
-                analizi üzerine çalıştım; İş Sağlığı ve Güvenliği
-                senaryolarına yönelik görüntü analizi çözümlerinin
-                geliştirilmesine katkı sağladım.
-              </p>
-
-            </div>
-
-            <div class="experience-tech">
-
-              <span>Python</span>
-              <span>YOLO</span>
-              <span>OpenCV</span>
-              <span>Object Detection</span>
-              <span>Multi-Object Tracking</span>
-              <span>Computer Vision</span>
-
-            </div>
-
-          </article>
-
-        </div>
-
-      </div>
 
     </section>
 
 
-    <!-- =========================
-         CONTACT
-    ========================== -->
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
 
-    <section
-      class="section contact-section"
-      id="contact"
-    >
+        <div class="container">
 
-      <div class="container">
+            <div class="section-index">
+                <span>06</span>
+                <span data-i18n="certifications.label">
+                    SELECTED CERTIFICATIONS
+                </span>
+            </div>
 
-        <div class="contact-wrapper">
-
-          <div class="contact-main">
-
-            <span
-              class="section-label"
-              data-i18n="contactLabel"
-            >
-              İletişim
-            </span>
-
-            <h2 data-i18n="contactTitle">
-              Birlikte çalışalım.
-            </h2>
-
-            <p
-              class="contact-description"
-              data-i18n="contactDescription"
-            >
-              Python Backend / Software Engineering başta olmak üzere,
-              veri yoğun ve AI destekli uygulamalar geliştirebileceğim
-              yeni mezun pozisyonlarına açığım. Benimle e-posta veya
-              LinkedIn üzerinden iletişime geçebilirsiniz.
-            </p>
-
-            <div class="contact-status">
-
-              <span class="status-dot"></span>
-
-              <span data-i18n="contactAvailability">
-                Türkiye genelindeki ve uzaktan çalışma fırsatlarına açığım.
-              </span>
-
+            <div class="section-heading">
+                <h2 data-i18n="certifications.title">
+                    Continued learning beyond university.
+                </h2>
             </div>
 
 
-            <div class="contact-buttons">
+            <div class="certification-list">
 
-              <a
-                href="mailto:atcieminosman@gmail.com"
-                class="contact-btn contact-btn-primary"
-              >
-                <span data-i18n="emailButton">
-                  E-posta Gönder
-                </span>
-
-                <span class="button-arrow">
-                  ↗
-                </span>
-              </a>
+                <div class="certification-item">
+                    <span>2026</span>
+                    <strong>BTK Akademi</strong>
+                    <p data-i18n="certifications.datathon">
+                        Datathon 2026
+                    </p>
+                </div>
 
 
-              <a
-                href="https://www.linkedin.com/in/emin-osman-atci"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-btn"
-              >
-                LinkedIn
-
-                <span class="button-arrow">
-                  ↗
-                </span>
-              </a>
+                <div class="certification-item">
+                    <span>2026</span>
+                    <strong>IBM</strong>
+                    <p data-i18n="certifications.cloud">
+                        Cloud Computing Fundamentals
+                    </p>
+                </div>
 
 
-              <a
-                href="https://github.com/eminosmanatci"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-btn"
-              >
-                GitHub
-
-                <span class="button-arrow">
-                  ↗
-                </span>
-              </a>
+                <div class="certification-item">
+                    <span>2025</span>
+                    <strong>Google</strong>
+                    <p data-i18n="certifications.pm">
+                        Google Project Management
+                    </p>
+                </div>
 
 
-              <a
-                href="assets/Emin_Osman_Atci_CV.pdf"
-                download
-                class="contact-btn"
-              >
-                <span data-i18n="cvButton">
-                  CV'yi İndir
-                </span>
-
-                <span class="button-arrow">
-                  ↓
-                </span>
-              </a>
-
-            </div>
-
-          </div>
+                <div class="certification-item">
+                    <span>2025</span>
+                    <strong>Google AI &amp; Technology Academy</strong>
+                    <p data-i18n="certifications.web">
+                        Web Application Development Training
+                    </p>
+                </div>
 
 
-          <div class="contact-side">
+                <div class="certification-item">
+                    <span>2025</span>
+                    <strong>Google</strong>
+                    <p data-i18n="certifications.data">
+                        Foundations of Data Science
+                    </p>
+                </div>
 
-            <div class="contact-detail">
 
-              <span
-                class="contact-detail-label"
-                data-i18n="emailLabel"
-              >
-                E-posta
-              </span>
+                <div class="certification-item">
+                    <span>2025</span>
+                    <strong>Miuul</strong>
+                    <p data-i18n="certifications.ai">
+                        AI Summer Camp
+                    </p>
+                </div>
 
-              <a href="mailto:atcieminosman@gmail.com">
-                atcieminosman@gmail.com
-              </a>
+
+                <div class="certification-item">
+                    <span>2024</span>
+                    <strong>Miuul</strong>
+                    <p data-i18n="certifications.python">
+                        Python Programming for Data Science
+                    </p>
+                </div>
+
+
+                <div class="certification-item">
+                    <span>2024</span>
+                    <strong>IBM</strong>
+                    <p data-i18n="certifications.emerging">
+                        Explore Emerging Tech
+                    </p>
+                </div>
 
             </div>
-
-
-            <div class="contact-detail">
-
-              <span
-                class="contact-detail-label"
-                data-i18n="focusLabel"
-              >
-                Odak Alanları
-              </span>
-
-              <p>
-                Python Backend<br>
-                Data & Databases<br>
-                Applied AI
-              </p>
-
-            </div>
-
-
-            <div class="contact-detail">
-
-              <span
-                class="contact-detail-label"
-                data-i18n="availabilityLabel"
-              >
-                Durum
-              </span>
-
-              <div class="available-text">
-
-                <span class="status-dot"></span>
-
-                <span data-i18n="availableText">
-                  Yeni fırsatlara açık
-                </span>
-
-              </div>
-
-            </div>
-
-          </div>
 
         </div>
 
-      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+
+        <div class="container">
+
+            <div class="section-index">
+                <span>07</span>
+                <span data-i18n="contact.label">CONTACT</span>
+            </div>
+
+            <div class="contact-content">
+
+                <div>
+
+                    <h2 data-i18n="contact.title">
+                        Let's build something useful.
+                    </h2>
+
+                    <p data-i18n="contact.description">
+                        I am open to software engineering, backend,
+                        data and AI opportunities.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="mailto:atcieminosman@gmail.com"
+                    class="contact-email"
+                >
+                    atcieminosman@gmail.com ↗
+                </a>
+
+
+                <div class="contact-links">
+
+                    <a
+                        href="https://github.com/eminosmanatci"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub ↗
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/emin-osman-atci"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn ↗
+                    </a>
+
+                    <a
+                        href="assets/Emin_Osman_Atci_CV.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-i18n="contact.cv"
+                    >
+                        Download CV ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
-  </main>
+</main>
 
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
+<footer class="site-footer">
 
-  <footer class="footer">
-
-    <div class="container footer-content">
-
-      <div class="footer-brand">
-
-        <a href="#" class="logo">
-          Emin<span>.</span>
-        </a>
-
-        <span
-          class="footer-copy"
-          data-i18n="footerText"
-        >
-          Python backend, data & applied AI.
-        </span>
-
-      </div>
-
-
-      <div class="footer-right">
+    <div class="container footer-inner">
 
         <span>
-          © <span id="currentYear"></span> Emin Osman Atcı
+            © <span id="currentYear">2026</span> Emin Osman Atcı
         </span>
 
-        <a
-          href="#"
-          data-i18n="backToTop"
-        >
-          Yukarı dön ↑
-        </a>
+        <span data-i18n="footer.role">
+            Computer Engineer
+        </span>
 
-      </div>
+        <a href="#top" data-i18n="footer.top">
+            Back to top ↑
+        </a>
 
     </div>
 
-  </footer>
+</footer>
 
 
-  <script src="script.js?v=7"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -1,689 +1,891 @@
-const translations = {
+document.addEventListener("DOMContentLoaded", () => {
 
-  tr: {
+    /* =========================================================
+       TRANSLATIONS
+       ========================================================= */
 
-    pageTitle:
-      "Emin Osman Atcı | Python Backend • Data • Applied AI",
+    const translations = {
 
-    /* =========================
-       NAV
-    ========================== */
+        en: {
 
-    navAbout:
-      "Hakkımda",
+            /* NAVIGATION */
+            "nav.work": "Work",
+            "nav.experience": "Experience",
+            "nav.recognition": "Recognition",
+            "nav.contact": "Contact",
+            "nav.cv": "CV",
 
-    navSkills:
-      "Yetkinlikler",
+            /* HERO */
+            "hero.label": "INTRO",
+            "hero.role": "COMPUTER ENGINEER",
+            "hero.title":
+                "I build backend systems, data products and AI-powered applications.",
+            "hero.description":
+                "I build software products for real-world problems using Python, modern backend architectures, data systems and AI integrations.",
 
-    navProjects:
-      "Projeler",
+            /* WORK */
+            "work.label": "SELECTED WORK",
+            "work.title":
+                "Systems built to solve real problems.",
 
-    navExperience:
-      "Deneyim",
+            /* COMMON */
+            "common.architecture": "ARCHITECTURE",
+            "common.engineering": "ENGINEERING",
+            "common.stack": "STACK",
+            "common.quality": "QUALITY",
+            "common.focus": "FOCUS",
+            "common.technologies": "TECHNOLOGIES",
+            "common.role": "ROLE",
+            "common.ai": "AI",
+            "common.status": "STATUS",
 
-    navContact:
-      "İletişim",
+            /* INSIGHTFLOW */
+            "projects.insightflow.status": "COMPLETED",
 
+            "projects.insightflow.summary":
+                "Enterprise analytics platform that transforms CSV sales data into interactive dashboards and AI-generated executive insights.",
 
-    /* =========================
-       HERO
-    ========================== */
+            "projects.insightflow.engineering":
+                "Multi-tenant architecture with organization-scoped data isolation, asynchronous processing and a structured dataset lifecycle.",
 
-    status:
-      "Yeni fırsatlara açığım",
+            "projects.insightflow.quality":
+                "62 backend tests with approximately 95% test coverage, duplicate dataset detection, validation and cleanup.",
 
-    intro:
-      "Merhaba, ben Emin Osman Atcı 👋",
+            /* AGROBYTE */
+            "projects.agrobyte.status":
+                "TEKNOFEST 2025 FINALIST",
 
-    heroFirst:
-      "Python backend sistemleri,",
+            "projects.agrobyte.summary":
+                "Computer vision system for agricultural monitoring, animal tracking and automated anomaly detection.",
 
-    heroHighlight:
-      "veri ve AI uygulamaları",
+            "projects.agrobyte.focus":
+                "Cow identification and tracking, behavior analysis, anomaly detection, hay-bale counting and smoke/fire detection.",
 
-    heroLast:
-      "geliştiriyorum.",
+            "projects.agrobyte.role":
+                "AI Unit Responsible",
 
-    heroDescription:
-      "Yeni mezun bir Bilgisayar Mühendisiyim. Python ile güvenilir backend servisleri ve veri katmanları geliştiriyor; AI özelliklerini gerçek uygulama akışlarına entegre ediyorum.",
+            /* SENTINELVISION */
+            "projects.sentinel.status":
+                "IN DEVELOPMENT",
 
-    projectsButton:
-      "Projelerimi İncele",
+            "projects.sentinel.summary":
+                "AI-powered security video analytics platform with retrieval-augmented querying over detected events.",
 
-    aiTag:
-      "Applied AI",
+            "projects.sentinel.placeholder":
+                "CURRENTLY IN DEVELOPMENT",
 
+            "projects.sentinel.statusText":
+                "Active development",
 
-    /* =========================
-       ABOUT
-    ========================== */
+            /* OTHER PROJECTS */
+            "other.label":
+                "OTHER PROJECTS",
 
-    aboutLabel:
-      "Hakkımda",
+            "projects.task.summary":
+                "Full-stack task management platform built around Clean Architecture.",
 
-    aboutTitle:
-      "Backend, veri ve yapay zekâyı gerçek ürünlerde bir araya getiriyorum.",
+            "projects.fire.summary":
+                "Real-time fire and smoke detection with cloud-based event logging.",
 
-    aboutParagraph1:
-      "Bilgisayar mühendisliği eğitimim boyunca Python merkezli yazılım geliştirme, veri odaklı sistemler ve yapay zekâ uygulamaları üzerine çalıştım. Özellikle güvenilir backend servisleri kurup veriyi işleyen ve AI özelliklerini gerçek ürün akışlarına entegre eden sistemler geliştirmeye odaklanıyorum.",
+            "projects.kitapla.summary":
+                "Android application for discovering, organizing and tracking books.",
 
-    aboutParagraph2:
-      "Stajlarımda veri analitiği ve bilgisayarlı görü alanlarında deneyim kazanırken; projelerimde REST API tasarımı, PostgreSQL veri modeli, asenkron işleme, test otomasyonu ve AI entegrasyonları gibi üretim odaklı katmanlarda çalıştım.",
+            "projects.kitapla.type":
+                "MOBILE",
 
-    aboutParagraph3:
-      "Kariyerime Python backend ve software engineering ekseninde; veri yoğun ve AI destekli uygulamalar geliştiren, mühendislik kalitesine önem veren bir teknoloji ekibinde başlamak istiyorum.",
+            /* EXPERIENCE */
+            "experience.label":
+                "EXPERIENCE",
 
-    internshipStat:
-      "Teknik staj deneyimi",
+            "experience.title":
+                "Engineering experience across AI and data.",
 
-    projectStat:
-      "Öne çıkan proje",
+            "experience.arvis.role":
+                "AI R&D Intern",
 
-    coverageStat:
-      "Projede test kapsamı",
+            "experience.arvis.description":
+                "Worked on computer vision and AI-based video analytics using Python, OpenCV and YOLO.",
 
-    teknofestStat:
-      "TEKNOFEST Finalisti",
+            "experience.medas.role":
+                "Business Intelligence & Data Analytics Intern",
 
+            "experience.medas.description":
+                "Worked with Oracle and SQL for data analysis, reporting and business intelligence workflows, with exposure to Power BI, data warehouses and real-time data systems.",
 
-    /* =========================
-       SKILLS
-    ========================== */
+            /* RECOGNITION */
+            "recognition.label":
+                "RECOGNITION",
 
-    skillsLabel:
-      "Teknik Yetkinlikler",
+            "recognition.title":
+                "Selected programs, competitions and achievements.",
 
-    skillsTitle:
-      "Kullandığım teknolojiler.",
+            "recognition.teknofest2025":
+                "Finalist in the Agricultural Technologies category with an AI-powered computer vision project.",
 
-    skillsDescription:
-      "Ana odağım Python backend geliştirme ve veri katmanı; AI entegrasyonları ile test, otomasyon ve geliştirme araçları bu sistemleri uçtan uca tamamlıyor.",
+            "recognition.teknofest2026":
+                "Finalist with a new AI-focused project.",
 
-    backendDescription:
-      "API geliştirme, veri erişimi, kimlik doğrulama ve asenkron işlemler.",
+            "recognition.google":
+                "Selected for an eight-month program covering AI applications development, web application development and entrepreneurship.",
 
-    dataDescription:
-      "Veri modelleme, ilişkisel veritabanları, analiz ve raporlama süreçleri.",
+            /* EDUCATION */
+            "education.label":
+                "EDUCATION",
 
-    aiDescription:
-      "LLM entegrasyonları, RAG ve bilgisayarlı görü çözümlerini uygulama katmanına taşıma.",
+            "education.title":
+                "Computer Engineering foundation.",
 
-    toolsDescription:
-      "Test, otomasyon, versiyon kontrolü ve modern geliştirme araçları.",
+            "education.degree":
+                "B.Sc. COMPUTER ENGINEERING",
 
+            "education.description":
+                "English-medium Computer Engineering program.",
 
-    /* =========================
-       PROJECTS
-    ========================== */
+            "education.coursework":
+                "RELEVANT COURSEWORK",
 
-    projectsLabel:
-      "Projeler",
+            "courses.ml":
+                "Machine Learning",
 
-    projectsTitle:
-      "Üzerinde çalıştığım projeler.",
+            "courses.deep":
+                "Deep Learning",
 
-    projectsDescription:
-      "Python backend, veri sistemleri ve uygulamalı yapay zekâ tarafındaki mühendislik yaklaşımımı gösteren öne çıkan çalışmalar.",
+            "courses.se":
+                "Software Engineering",
 
-    insightSubtitle:
-      "Kurumsal Analitik Platform",
+            "courses.modern":
+                "Modern Programming Languages",
 
-    insightDescription:
-      "Kurumsal verileri güvenli API'ler ve arka plan iş akışlarıyla işleyen, analiz eden ve AI destekli yönetici içgörülerine dönüştüren Python backend odaklı analitik platform.",
+            "courses.distributed":
+                "Distributed Systems",
 
-    insightPoint1:
-      "FastAPI, PostgreSQL ve SQLAlchemy ile REST API ve veri odaklı backend mimarisi geliştirdim.",
+            "courses.algorithms":
+                "Algorithms",
 
-    insightPoint2:
-      "JWT tabanlı kimlik doğrulama, rol bazlı yetkilendirme ve Redis/Celery ile arka plan veri işleme süreçlerini oluşturdum.",
+            "courses.oop":
+                "Object-Oriented Programming",
 
-    insightPoint3:
-      "62 backend testiyle yaklaşık %95 test kapsamına ulaştım ve GitHub Actions ile test süreçlerini otomatikleştirdim.",
+            "courses.mobile":
+                "Mobile Programming",
 
-    coverageVisual:
-      "Test Kapsamı",
+            /* CERTIFICATIONS */
+            "certifications.label":
+                "SELECTED CERTIFICATIONS",
 
-    teknofestBadge:
-      "TEKNOFEST 2025 Finalisti",
+            "certifications.title":
+                "Continued learning beyond university.",
 
-    agroSubtitle:
-      "Görüntü İşleme Tabanlı Hayvan Takip Sistemi",
+            "certifications.datathon":
+                "Datathon 2026",
 
-    agroDescription:
-      "Çiftlik ortamındaki inekleri kamera görüntülerinden tespit eden, kimlik bazlı takip eden ve davranışlarını analiz ederek olası anomalileri izleyen bilgisayarlı görü sistemi.",
+            "certifications.cloud":
+                "Cloud Computing Fundamentals",
 
-    agroPoint1:
-      "YOLO ve OpenCV tabanlı görüntü işleme ile gerçek zamanlı inek tespiti ve kimlik bazlı Multi-Object Tracking gerçekleştirdim.",
+            "certifications.pm":
+                "Google Project Management",
 
-    agroPoint2:
-      "Hayvanların ayakta durma, oturma ve yemleme gibi aktivitelerini görüntü üzerinden analiz eden bir yapı geliştirdim.",
+            "certifications.web":
+                "Web Application Development Training",
 
-    agroPoint3:
-      "Davranışların zaman içerisindeki değişimini takip ederek olası anomalilerin belirlenmesine yönelik izleme altyapısı üzerinde çalıştım.",
+            "certifications.data":
+                "Foundations of Data Science",
 
-    realTimeAnalysis:
-      "Gerçek Zamanlı Analiz",
+            "certifications.ai":
+                "AI Summer Camp",
 
+            "certifications.python":
+                "Python Programming for Data Science",
 
-    /* =========================
-       EXPERIENCE
-    ========================== */
+            "certifications.emerging":
+                "Explore Emerging Tech",
 
-    experienceLabel:
-      "Deneyim",
+            /* CONTACT */
+            "contact.label":
+                "CONTACT",
 
-    experienceTitle:
-      "Farklı sektörlerde edindiğim teknik deneyimler.",
+            "contact.title":
+                "Let's build something useful.",
 
-    experienceDescription:
-      "Veri analitiğinden AI Ar-Ge'ye uzanan staj deneyimlerim, veriyle çalışma ve uygulama geliştirme tarafındaki çok yönlü teknik temelimi destekliyor.",
+            "contact.description":
+                "I am open to software engineering, backend, data and AI opportunities.",
 
-    medasRole:
-      "Business Intelligence & Data Analytics Stajyeri",
+            "contact.cv":
+                "Download CV ↗",
 
-    medasDate:
-      "Temmuz 2025 — Ağustos 2025",
+            /* FOOTER */
+            "footer.role":
+                "Computer Engineer",
 
-    medasDescription:
-      "Enerji sektöründeki büyük ölçekli veriler üzerinde SQL ile analiz ve raporlama çalışmaları gerçekleştirdim. Sorgu performansının iyileştirilmesi üzerine çalışırken, Power BI ile karar destek süreçlerinde kullanılabilecek etkileşimli dashboard ve analizler geliştirdim.",
+            "footer.top":
+                "Back to top ↑"
+        },
 
-    arvisRole:
-      "AI R&D Stajyeri",
 
-    arvisDate:
-      "Temmuz 2024 — Eylül 2024",
+        /* =====================================================
+           TURKISH
+           ===================================================== */
 
-    arvisDescription:
-      "Bilgisayarlı görü ve derin öğrenme tabanlı Ar-Ge çalışmalarında görev aldım. OpenCV ve YOLO ile nesne tespiti, çoklu nesne takibi ve insan davranışı analizi üzerine çalıştım; İş Sağlığı ve Güvenliği senaryolarına yönelik görüntü analizi çözümlerinin geliştirilmesine katkı sağladım.",
+        tr: {
 
+            /* NAVIGATION */
+            "nav.work": "Projeler",
+            "nav.experience": "Deneyim",
+            "nav.recognition": "Başarılar",
+            "nav.contact": "İletişim",
+            "nav.cv": "CV",
 
-    /* =========================
-       CONTACT
-    ========================== */
+            /* HERO */
+            "hero.label": "GİRİŞ",
+            "hero.role": "BİLGİSAYAR MÜHENDİSİ",
 
-    contactLabel:
-      "İletişim",
+            "hero.title":
+                "Backend sistemleri, veri ürünleri ve yapay zekâ destekli uygulamalar geliştiriyorum.",
 
-    contactTitle:
-      "Birlikte çalışalım.",
+            "hero.description":
+                "Python, modern backend mimarileri, veri sistemleri ve yapay zekâ entegrasyonlarıyla gerçek problemlere yönelik yazılım ürünleri geliştiriyorum.",
 
-    contactDescription:
-      "Python Backend / Software Engineering başta olmak üzere, veri yoğun ve AI destekli uygulamalar geliştirebileceğim yeni mezun pozisyonlarına açığım. Benimle e-posta veya LinkedIn üzerinden iletişime geçebilirsiniz.",
+            /* WORK */
+            "work.label":
+                "SEÇİLMİŞ PROJELER",
 
-    contactAvailability:
-      "Türkiye genelindeki ve uzaktan çalışma fırsatlarına açığım.",
+            "work.title":
+                "Gerçek problemlere çözüm üretmek için geliştirilmiş sistemler.",
 
-    emailButton:
-      "E-posta Gönder",
+            /* COMMON */
+            "common.architecture": "MİMARİ",
+            "common.engineering": "MÜHENDİSLİK",
+            "common.stack": "TEKNOLOJİLER",
+            "common.quality": "KALİTE",
+            "common.focus": "ODAK",
+            "common.technologies": "TEKNOLOJİLER",
+            "common.role": "ROL",
+            "common.ai": "YAPAY ZEKÂ",
+            "common.status": "DURUM",
 
-    cvButton:
-      "CV'yi İndir",
+            /* INSIGHTFLOW */
+            "projects.insightflow.status":
+                "TAMAMLANDI",
 
-    emailLabel:
-      "E-posta",
+            "projects.insightflow.summary":
+                "CSV satış verilerini etkileşimli panolara ve yapay zekâ tarafından oluşturulan yönetici içgörülerine dönüştüren kurumsal analiz platformu.",
 
-    focusLabel:
-      "Odak Alanları",
+            "projects.insightflow.engineering":
+                "Organizasyon bazlı veri izolasyonu, asenkron veri işleme ve yapılandırılmış veri seti yaşam döngüsü sunan multi-tenant mimari.",
 
-    availabilityLabel:
-      "Durum",
+            "projects.insightflow.quality":
+                "Yaklaşık %95 test kapsamına sahip 62 backend testi, yinelenen veri seti tespiti, doğrulama ve temizleme süreçleri.",
 
-    availableText:
-      "Yeni fırsatlara açık",
+            /* AGROBYTE */
+            "projects.agrobyte.status":
+                "TEKNOFEST 2025 FİNALİSTİ",
 
-    footerText:
-      "Python backend, data & applied AI.",
+            "projects.agrobyte.summary":
+                "Tarımsal izleme, hayvan takibi ve otomatik anomali tespiti için geliştirilen bilgisayarlı görü sistemi.",
 
-    backToTop:
-      "Yukarı dön ↑"
+            "projects.agrobyte.focus":
+                "Büyükbaş hayvanların benzersiz kimliklerle (ID) sisteme tanımlanması, gün boyunca elde edilen görsel verilerle davranış kalıplarının analiz edilmesi ve anomalilerin tespit edilmesi.",
 
-  },
+            "projects.agrobyte.role":
+                "Yapay Zekâ Birim Sorumlusu",
 
+            /* SENTINELVISION */
+            "projects.sentinel.status":
+                "GELİŞTİRİLİYOR",
 
-  /* =========================================================
-     ENGLISH
-  ========================================================== */
+            "projects.sentinel.summary":
+                "Tespit edilen olaylar üzerinde RAG tabanlı sorgulama sağlayan yapay zekâ destekli güvenlik video analiz platformu.",
 
-  en: {
+            "projects.sentinel.placeholder":
+                "GELİŞTİRME AŞAMASINDA",
 
-    pageTitle:
-      "Emin Osman Atcı | Python Backend • Data • Applied AI",
+            "projects.sentinel.statusText":
+                "Aktif geliştirme",
 
-    /* =========================
-       NAV
-    ========================== */
+            /* OTHER PROJECTS */
+            "other.label":
+                "DİĞER PROJELER",
 
-    navAbout:
-      "About",
+            "projects.task.summary":
+                "Clean Architecture yaklaşımıyla geliştirilen full-stack görev yönetim platformu.",
 
-    navSkills:
-      "Skills",
+            "projects.fire.summary":
+                "Bulut tabanlı olay kaydıyla gerçek zamanlı yangın ve duman tespit sistemi.",
 
-    navProjects:
-      "Projects",
+            "projects.kitapla.summary":
+                "Kitap keşfetme, düzenleme ve takip özelliklerine sahip Android uygulaması.",
 
-    navExperience:
-      "Experience",
+            "projects.kitapla.type":
+                "MOBİL",
 
-    navContact:
-      "Contact",
+            /* EXPERIENCE */
+            "experience.label":
+                "DENEYİM",
 
+            "experience.title":
+                "Yapay zekâ ve veri alanlarında mühendislik deneyimi.",
 
-    /* =========================
-       HERO
-    ========================== */
+            "experience.arvis.role":
+                "Yapay Zekâ Ar-Ge Stajyeri",
 
-    status:
-      "Open to opportunities",
+            "experience.arvis.description":
+                "Python, OpenCV ve YOLO kullanarak bilgisayarlı görü ve yapay zekâ tabanlı video analiz çalışmaları gerçekleştirdim.",
 
-    intro:
-      "Hi, I'm Emin Osman Atcı 👋",
+            "experience.medas.role":
+                "İş Zekâsı ve Veri Analitiği Stajyeri",
 
-    heroFirst:
-      "I build Python backend systems,",
+            "experience.medas.description":
+                "Kurumsal veri ambarı altyapısı üzerinde SQL ile veri analizi ve raporlama süreçlerini yürüttüm; Power BI ve gerçek zamanlı veri sistemleri kullanarak iş zekâsı uygulamaları geliştirdim.",
 
-    heroHighlight:
-      "data & AI-powered applications",
+            /* RECOGNITION */
+            "recognition.label":
+                "BAŞARILAR",
 
-    heroLast:
-      ".",
+            "recognition.title":
+                "Seçili programlar, yarışmalar ve başarılar.",
 
-    heroDescription:
-      "I'm a recent Computer Engineering graduate focused on Python backend engineering, data systems and applied AI. I build APIs and data layers, then integrate AI capabilities into real-world applications.",
+            "recognition.teknofest2026":
+                "Yapay Zekâ ve Model Optimizasyon sorumlusu olarak görev aldığım akıllı balık kafesi izleme projesiyle TEKNOFEST 2026 Tarım Teknolojileri kategorisinde finalist olduk.",
 
-    projectsButton:
-      "View My Projects",
+            "recognition.teknofest2025":
+                "Yapay Zekâ Birim Sorumlusu olarak görev aldığım akıllı çiftlik projesiyle Tarım Teknolojileri kategorisinde finalist olduk.",
 
-    aiTag:
-      "Applied AI",
+            "recognition.google":
+                "Yapay zekâ uygulama geliştirme, web uygulama geliştirme ve girişimcilik alanlarını kapsayan sekiz aylık eğitim aldım.",
 
+            /* EDUCATION */
+            "education.label":
+                "EĞİTİM",
 
-    /* =========================
-       ABOUT
-    ========================== */
+            "education.title":
+                "Bilgisayar mühendisliği temeli.",
 
-    aboutLabel:
-      "About Me",
+            "education.degree":
+                "BİLGİSAYAR MÜHENDİSLİĞİ LİSANS",
 
-    aboutTitle:
-      "I bring backend engineering, data and AI together in working products.",
+            "education.description":
+                "İngilizce eğitim veren Bilgisayar Mühendisliği programı.",
 
-    aboutParagraph1:
-      "Throughout my Computer Engineering education, I focused on Python-centric software development, data-driven systems and AI applications. I'm especially interested in building reliable backend services that process data and integrate AI capabilities into real product workflows.",
+            "education.coursework":
+                "İLGİLİ DERSLER",
 
-    aboutParagraph2:
-      "My internships gave me hands-on experience in data analytics and computer vision, while my projects exposed me to production-oriented layers such as REST API design, PostgreSQL data models, asynchronous processing, test automation and AI integrations.",
+            "courses.ml":
+                "Makine Öğrenmesi",
 
-    aboutParagraph3:
-      "I'm looking to begin my career in Python backend and software engineering, building data-intensive and AI-powered applications in a team that values engineering quality and ownership.",
+            "courses.deep":
+                "Derin Öğrenme",
 
-    internshipStat:
-      "Technical internships",
+            "courses.se":
+                "Yazılım Mühendisliği",
 
-    projectStat:
-      "Featured projects",
+            "courses.modern":
+                "Modern Programlama Dilleri",
 
-    coverageStat:
-      "Project test coverage",
+            "courses.distributed":
+                "Dağıtık Sistemler",
 
-    teknofestStat:
-      "TEKNOFEST Finalist",
+            "courses.algorithms":
+                "Algoritmalar",
 
+            "courses.oop":
+                "Nesne Yönelimli Programlama",
 
-    /* =========================
-       SKILLS
-    ========================== */
+            "courses.mobile":
+                "Mobil Programlama",
 
-    skillsLabel:
-      "Technical Skills",
+            /* CERTIFICATIONS */
+            "certifications.label":
+                "SEÇİLİ SERTİFİKALAR",
 
-    skillsTitle:
-      "Technologies I work with.",
+            "certifications.title":
+                "Üniversite eğitiminin ötesinde sürekli öğrenme.",
 
-    skillsDescription:
-      "My core focus is Python backend development and the data layer, complemented by AI integrations, testing, automation and modern development tooling.",
+            "certifications.datathon":
+                "Datathon 2026",
 
-    backendDescription:
-      "API development, data access, authentication and asynchronous processing.",
+            "certifications.cloud":
+                "Cloud Computing Fundamentals",
 
-    dataDescription:
-      "Data modeling, relational databases, analysis and reporting workflows.",
+            "certifications.pm":
+                "Google Project Management",
 
-    aiDescription:
-      "LLM integrations, RAG and computer vision capabilities brought into application workflows.",
+            "certifications.web":
+                "Web Uygulama Geliştirme Eğitimi",
 
-    toolsDescription:
-      "Testing, automation, version control and modern development tooling.",
+            "certifications.data":
+                "Foundations of Data Science",
 
+            "certifications.ai":
+                "Yapay Zekâ Yaz Kampı",
 
-    /* =========================
-       PROJECTS
-    ========================== */
+            "certifications.python":
+                "Python Programming for Data Science",
 
-    projectsLabel:
-      "Projects",
+            "certifications.emerging":
+                "Explore Emerging Tech",
 
-    projectsTitle:
-      "Projects I've worked on.",
+            /* CONTACT */
+            "contact.label":
+                "İLETİŞİM",
 
-    projectsDescription:
-      "Selected projects that demonstrate my engineering approach across Python backend, data systems and applied AI.",
+            "contact.title":
+                "Birlikte faydalı bir şey geliştirelim.",
 
-    insightSubtitle:
-      "Enterprise Analytics Platform",
+            "contact.description":
+                "Yazılım mühendisliği, backend, veri ve yapay zekâ alanlarındaki fırsatlara açığım.",
 
-    insightDescription:
-      "A Python backend-focused analytics platform that processes enterprise data through secure APIs and background workflows, turning it into analytics and AI-assisted management insights.",
+            "contact.cv":
+                "CV'yi İndir ↗",
 
-    insightPoint1:
-      "Built REST APIs and a data-driven backend architecture using FastAPI, PostgreSQL and SQLAlchemy.",
+            /* FOOTER */
+            "footer.role":
+                "Bilgisayar Mühendisi",
 
-    insightPoint2:
-      "Implemented JWT authentication, role-based authorization and background data processing with Redis and Celery.",
+            "footer.top":
+                "Başa dön ↑"
+        }
+    };
 
-    insightPoint3:
-      "Reached approximately 95% test coverage with 62 backend tests and automated testing workflows with GitHub Actions.",
 
-    coverageVisual:
-      "Test Coverage",
+    /* =========================================================
+       LANGUAGE
+       ========================================================= */
 
-    teknofestBadge:
-      "TEKNOFEST 2025 Finalist",
+    const languageToggle =
+        document.getElementById("languageToggle");
 
-    agroSubtitle:
-      "Computer Vision-Based Animal Tracking System",
+    let currentLanguage =
+        localStorage.getItem("portfolioLanguage") || "en";
 
-    agroDescription:
-      "A computer vision system that detects cattle from camera footage, tracks each animal by identity and analyzes behavioral patterns to monitor potential anomalies.",
 
-    agroPoint1:
-      "Implemented real-time cattle detection and identity-based Multi-Object Tracking using YOLO and OpenCV.",
+    function updateLanguage(language) {
 
-    agroPoint2:
-      "Developed activity analysis for behaviors such as standing, sitting and feeding using camera footage.",
+        if (!translations[language]) {
+            return;
+        }
 
-    agroPoint3:
-      "Worked on a monitoring pipeline that tracks behavioral changes over time to identify potential anomalies.",
+        currentLanguage = language;
 
-    realTimeAnalysis:
-      "Real-Time Analysis",
+        localStorage.setItem(
+            "portfolioLanguage",
+            currentLanguage
+        );
 
+        document.documentElement.lang =
+            currentLanguage;
 
-    /* =========================
-       EXPERIENCE
-    ========================== */
 
-    experienceLabel:
-      "Experience",
+        document
+            .querySelectorAll("[data-i18n]")
+            .forEach((element) => {
 
-    experienceTitle:
-      "Technical experience across different industries.",
+                const key =
+                    element.getAttribute("data-i18n");
 
-    experienceDescription:
-      "Internship experience spanning data analytics and AI R&D, strengthening my foundation in both working with data and building intelligent applications.",
+                const translatedText =
+                    translations[currentLanguage][key];
 
-    medasRole:
-      "Business Intelligence & Data Analytics Intern",
+                if (translatedText) {
+                    element.textContent =
+                        translatedText;
+                }
+            });
 
-    medasDate:
-      "July 2025 — August 2025",
 
-    medasDescription:
-      "Worked with large-scale energy datasets using SQL for analysis and reporting. Contributed to query performance improvements and developed interactive Power BI dashboards to support data-driven decision-making.",
+        if (languageToggle) {
 
-    arvisRole:
-      "AI R&D Intern",
+            languageToggle.textContent =
+                currentLanguage === "en"
+                    ? "TR"
+                    : "EN";
 
-    arvisDate:
-      "July 2024 — September 2024",
+            languageToggle.setAttribute(
+                "aria-label",
+                currentLanguage === "en"
+                    ? "Türkçeye geç"
+                    : "Switch to English"
+            );
+        }
 
-    arvisDescription:
-      "Contributed to computer vision and deep learning R&D projects. Worked on object detection, multi-object tracking and human behavior analysis using OpenCV and YOLO, supporting the development of vision-based solutions for occupational health and safety scenarios.",
 
+        updateMetadata();
+    }
 
-    /* =========================
-       CONTACT
-    ========================== */
 
-    contactLabel:
-      "Contact",
+    /* =========================================================
+       PAGE METADATA
+       ========================================================= */
 
-    contactTitle:
-      "Let's work together.",
+    function updateMetadata() {
 
-    contactDescription:
-      "I'm primarily open to junior Python Backend / Software Engineering roles, especially where I can build data-intensive and AI-powered applications. Feel free to reach out via email or LinkedIn.",
+        document.title =
+            currentLanguage === "tr"
+                ? "Emin Osman Atcı — Bilgisayar Mühendisi"
+                : "Emin Osman Atcı — Computer Engineer";
 
-    contactAvailability:
-      "Open to opportunities across Türkiye and remote roles.",
 
-    emailButton:
-      "Email Me",
+        const description =
+            document.querySelector(
+                'meta[name="description"]'
+            );
 
-    cvButton:
-      "Download CV",
+        if (!description) {
+            return;
+        }
 
-    emailLabel:
-      "Email",
 
-    focusLabel:
-      "Focus Areas",
+        description.setAttribute(
+            "content",
+            currentLanguage === "tr"
+                ? "Emin Osman Atcı — Backend sistemleri, veri ürünleri ve yapay zekâ destekli uygulamalar geliştiren Bilgisayar Mühendisi."
+                : "Emin Osman Atcı — Computer Engineer building backend systems, data products and AI-powered applications."
+        );
+    }
 
-    availabilityLabel:
-      "Availability",
 
-    availableText:
-      "Open to opportunities",
+    /* =========================================================
+       LANGUAGE TOGGLE
+       ========================================================= */
 
-    footerText:
-      "Python backend, data & applied AI.",
+    if (languageToggle) {
 
-    backToTop:
-      "Back to top ↑"
+        languageToggle.addEventListener(
+            "click",
+            () => {
 
-  }
+                updateLanguage(
+                    currentLanguage === "en"
+                        ? "tr"
+                        : "en"
+                );
 
-};
+            }
+        );
+    }
 
 
-/* =========================================================
-   DOM ELEMENTS
-========================================================= */
+    /* =========================================================
+       SMOOTH SCROLL
+       ========================================================= */
 
-const languageButtons =
-  document.querySelectorAll(".lang-btn");
+    document
+        .querySelectorAll('a[href^="#"]')
+        .forEach((link) => {
 
-const translatedElements =
-  document.querySelectorAll("[data-i18n]");
+            link.addEventListener(
+                "click",
+                (event) => {
 
+                    const targetId =
+                        link.getAttribute("href");
 
-/* =========================================================
-   LANGUAGE CHANGE
-========================================================= */
+                    if (
+                        !targetId ||
+                        targetId === "#"
+                    ) {
+                        return;
+                    }
 
-function changeLanguage(language) {
+                    const target =
+                        document.querySelector(targetId);
 
-  if (!translations[language]) {
-    return;
-  }
+                    if (!target) {
+                        return;
+                    }
 
+                    event.preventDefault();
 
-  translatedElements.forEach((element) => {
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
 
-    const key =
-      element.getAttribute("data-i18n");
+                }
+            );
 
-    const translatedText =
-      translations[language][key];
+        });
 
 
-    if (translatedText !== undefined) {
+    /* =========================================================
+       EXTERNAL LINKS
+       ========================================================= */
 
-      element.textContent =
-        translatedText;
+    document
+        .querySelectorAll('a[target="_blank"]')
+        .forEach((link) => {
+
+            link.setAttribute(
+                "rel",
+                "noopener noreferrer"
+            );
+
+        });
+
+
+    /* =========================================================
+       MOBILE NAVIGATION
+       ========================================================= */
+
+    const navToggle = document.getElementById("navToggle");
+    const mobileNav = document.getElementById("mobileNav");
+
+    function closeMobileNav() {
+        if (!navToggle || !mobileNav) return;
+        navToggle.setAttribute("aria-expanded", "false");
+        mobileNav.classList.remove("is-open");
+    }
+
+    if (navToggle && mobileNav) {
+
+        navToggle.addEventListener("click", () => {
+            const isOpen = mobileNav.classList.toggle("is-open");
+            navToggle.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        mobileNav.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", closeMobileNav);
+        });
+
+        window.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") closeMobileNav();
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 980) closeMobileNav();
+        });
 
     }
 
-  });
 
+    /* =========================================================
+       ACTIVE NAVIGATION
+       ========================================================= */
 
-  /* ACTIVE LANGUAGE BUTTON */
+    const sections =
+        document.querySelectorAll(
+            "main section[id]"
+        );
 
-  languageButtons.forEach((button) => {
-
-    button.classList.remove("active");
-
-
-    if (
-      button.dataset.lang === language
-    ) {
-
-      button.classList.add("active");
-
-    }
-
-  });
-
-
-  /* HTML LANG ATTRIBUTE */
-
-  document.documentElement.lang =
-    language;
-
-
-  /* PAGE TITLE */
-
-  document.title =
-    translations[language].pageTitle;
-
-
-  /* SAVE LANGUAGE */
-
-  localStorage.setItem(
-    "portfolio-language",
-    language
-  );
-
-}
-
-
-/* =========================================================
-   LANGUAGE BUTTON EVENTS
-========================================================= */
-
-languageButtons.forEach((button) => {
-
-  button.addEventListener(
-    "click",
-    () => {
-
-      const selectedLanguage =
-        button.dataset.lang;
-
-      changeLanguage(
-        selectedLanguage
-      );
-
-    }
-  );
-
-});
-
-
-/* =========================================================
-   INITIAL LANGUAGE
-========================================================= */
-
-const savedLanguage =
-  localStorage.getItem(
-    "portfolio-language"
-  );
-
-
-if (
-  savedLanguage &&
-  translations[savedLanguage]
-) {
-
-  changeLanguage(
-    savedLanguage
-  );
-
-} else {
-
-  changeLanguage("tr");
-
-}
-
-
-/* =========================================================
-   CURRENT YEAR
-========================================================= */
-
-const currentYear =
-  document.getElementById(
-    "currentYear"
-  );
-
-
-if (currentYear) {
-
-  currentYear.textContent =
-    new Date().getFullYear();
-
-}
-
-
-/* =========================================================
-   SMOOTH SCROLL
-========================================================= */
-
-const internalLinks =
-  document.querySelectorAll(
-    'a[href^="#"]'
-  );
-
-
-internalLinks.forEach((link) => {
-
-  link.addEventListener(
-    "click",
-    (event) => {
-
-      const targetId =
-        link.getAttribute("href");
-
-
-      if (
-        !targetId ||
-        targetId === "#"
-      ) {
-
-        return;
-
-      }
-
-
-      const targetElement =
-        document.querySelector(
-          targetId
+    const navLinks =
+        document.querySelectorAll(
+            ".main-nav a"
         );
 
 
-      if (!targetElement) {
-        return;
-      }
+    function updateActiveNavigation() {
+
+        let currentSection = "";
+
+        const scrollPosition =
+            window.scrollY + 180;
 
 
-      event.preventDefault();
+        sections.forEach((section) => {
+
+            const sectionTop =
+                section.offsetTop;
+
+            const sectionBottom =
+                sectionTop +
+                section.offsetHeight;
 
 
-      targetElement.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
+            if (
+                scrollPosition >= sectionTop &&
+                scrollPosition < sectionBottom
+            ) {
+                currentSection =
+                    section.getAttribute("id");
+            }
+
+        });
+
+
+        navLinks.forEach((link) => {
+
+            const href =
+                link.getAttribute("href");
+
+            link.classList.toggle(
+                "is-active",
+                href === `#${currentSection}`
+            );
+
+        });
 
     }
-  );
+
+
+    window.addEventListener(
+        "scroll",
+        updateActiveNavigation,
+        { passive: true }
+    );
+
+
+    /* =========================================================
+       HEADER SCROLL
+       ========================================================= */
+
+    const header =
+        document.querySelector(".site-header");
+
+
+    function updateHeader() {
+
+        if (!header) {
+            return;
+        }
+
+        header.classList.toggle(
+            "is-scrolled",
+            window.scrollY > 20
+        );
+
+    }
+
+
+    window.addEventListener(
+        "scroll",
+        updateHeader,
+        { passive: true }
+    );
+
+
+    /* =========================================================
+       REVEAL ANIMATION
+       ========================================================= */
+
+    const revealElements =
+        document.querySelectorAll(
+            ".section-heading, " +
+            ".hero-content, " +
+            ".other-projects, " +
+            ".education-layout, " +
+            ".contact-content"
+        );
+
+
+    if (
+        "IntersectionObserver" in window
+    ) {
+
+        const observer =
+            new IntersectionObserver(
+                (entries, observerInstance) => {
+
+                    entries.forEach((entry) => {
+
+                        if (
+                            !entry.isIntersecting
+                        ) {
+                            return;
+                        }
+
+                        entry.target.classList.add(
+                            "is-visible"
+                        );
+
+                        observerInstance.unobserve(
+                            entry.target
+                        );
+
+                    });
+
+                },
+                {
+                    threshold: 0.12,
+                    rootMargin:
+                        "0px 0px -40px 0px"
+                }
+            );
+
+
+        revealElements.forEach((element) => {
+
+            element.classList.add(
+                "reveal-on-scroll"
+            );
+
+            observer.observe(element);
+
+        });
+
+    } else {
+
+        revealElements.forEach((element) => {
+
+            element.classList.add(
+                "is-visible"
+            );
+
+        });
+
+    }
+
+
+    /* =========================================================
+       IMAGE FALLBACK
+       ========================================================= */
+
+    document
+        .querySelectorAll(
+            ".project-visual img"
+        )
+        .forEach((image) => {
+
+            image.addEventListener(
+                "error",
+                () => {
+
+                    image.style.display =
+                        "none";
+
+                    const parent =
+                        image.closest(
+                            ".project-visual"
+                        );
+
+                    if (parent) {
+
+                        parent.classList.add(
+                            "image-missing"
+                        );
+
+                    }
+
+                }
+            );
+
+        });
+
+
+    /* =========================================================
+       CURRENT YEAR
+       ========================================================= */
+
+    const year =
+        document.getElementById(
+            "currentYear"
+        );
+
+    if (year) {
+
+        year.textContent =
+            new Date().getFullYear();
+
+    }
+
+
+    /* =========================================================
+       INITIALIZE
+       ========================================================= */
+
+    updateLanguage(
+        currentLanguage
+    );
+
+    updateActiveNavigation();
+
+    updateHeader();
 
 });
