@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "nav.cv": "Download CV",
 
         "hero.tag": "computer engineer",
+        "hero.conf": "98%",
         "hero.lead": "I build web applications, backend services and computer vision systems. I enjoy taking a product from end to end — from the REST API and database design to authentication and object detection on camera footage.",
         "hero.cv": "Download CV (PDF)",
         "hero.mail": "Send an email",
