@@ -234,7 +234,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
     white-space: nowrap;
     animation: tag 300ms ease 950ms both;
 }
-.detect-tag b { font-weight: 800; margin-left: 4px; font-variant-numeric: tabular-nums; }
+.detect-tag b { font-weight: 800; margin-left: 4px; }
 
 .hero-name {
     font-size: clamp(52px, 10.5vw, 132px);
